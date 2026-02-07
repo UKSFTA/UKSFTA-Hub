@@ -1,6 +1,6 @@
 import { QuartzTransformerPlugin } from "../types"
 import { visit } from "unist-util-visit"
-import { Code, Parent, Node } from "mdast"
+import { Code, Parent } from "mdast"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
@@ -20,6 +20,17 @@ async function fetchUnitCommanderData(endpoint: string, apiKey: string) {
   }
 }
 
+// Helper to recursively get files
+const getFiles = (dir: string): string[] => {
+    if (!fs.existsSync(dir)) return []
+    const subdirs = fs.readdirSync(dir)
+    const files = subdirs.map((subdir) => {
+      const res = path.resolve(dir, subdir)
+      return fs.statSync(res).isDirectory() ? getFiles(res) : res
+    })
+    return files.flat().filter(f => f.endsWith(".md"))
+}
+
 export const DataviewEmulation: QuartzTransformerPlugin = () => {
   return {
     name: "DataviewEmulation",
@@ -29,103 +40,106 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
           const promises: Promise<void>[] = []
           
           visit(tree, "code", (node: Code, index: number, parent: Parent) => {
-            if (node.lang === "dataview") {
+            if (node.lang === "dataview" || node.lang === "dataviewjs") {
               const query = node.value.toLowerCase()
               const apiKey = process.env.UNIT_COMMANDER_BOT_TOKEN
               const unitId = process.env.UNIT_COMMANDER_COMMUNITY_ID
 
-              // Handle Personnel Tables
-              if (query.includes('from "personnel/roster"') || query.includes('from "personnel"')) {
-                const p = (async () => {
-                  let personnel: any[] = []
+              const p = (async () => {
+                let tableHtml = ""
+                
+                // 1. RECENT ACTIVITY HANDLER
+                if (query.includes('file.mtime') && query.includes('limit 10')) {
+                    const allFiles = getFiles(path.join(process.cwd(), "content"))
+                    const recentFiles = allFiles
+                        .map(f => ({
+                            name: path.basename(f, ".md"),
+                            path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", ""),
+                            mtime: fs.statSync(f).mtime
+                        }))
+                        .filter(f => f.name !== "index" && !f.path.includes(".obsidian"))
+                        .sort((a, b) => b.mtime.getTime() - a.mtime.getTime())
+                        .slice(0, 10)
 
-                  if (apiKey && unitId) {
-                    // Try different potential endpoints
-                    const apiData = await fetchUnitCommanderData(`units/${unitId}/members`, apiKey) || 
-                                    await fetchUnitCommanderData(`units/${unitId}/roster`, apiKey)
-                    
-                    if (apiData && Array.isArray(apiData)) {
-                      personnel = apiData.map(p => ({
-                        full_name: p.name || p.username,
-                        rank: p.rank?.name || "Unknown",
-                        current_unit: p.unit?.name || "Unassigned",
-                        rank_order: p.rank?.order || 99
-                      }))
-                    }
-                  }
-
-                  if (personnel.length === 0) {
-                    const rosterPath = path.join(process.cwd(), "content", "Personnel", "Roster")
-                    if (fs.existsSync(rosterPath)) {
-                      const files = fs.readdirSync(rosterPath).filter(f => f.endsWith(".md"))
-                      personnel = files.map(f => {
-                        const content = fs.readFileSync(path.join(rosterPath, f), "utf-8")
-                        const { data } = matter(content)
-                        return data
-                      })
-                    }
-                  }
-
-                  if (query.includes("hq") || query.includes("intelligence cell") || query.includes("tfhq")) {
-                    const staff = personnel
-                      .filter(p => p.current_unit && (
-                        p.current_unit.includes("HQ") || 
-                        p.current_unit.includes("Intelligence Cell") || 
-                        p.current_unit.includes("Med Det HQ") ||
-                        p.current_unit.includes("TFHQ")
-                      ))
-                      .sort((a, b) => (a.rank_order || 99) - (b.rank_order || 99))
-
-                    let tableHtml = `<table class="dataview-table"><thead><tr><th>Rank</th><th>Name</th><th>Unit</th></tr></thead><tbody>`
-                    staff.forEach(p => {
-                      tableHtml += `<tr><td>${p.rank || "Unknown"}</td><td>${p.full_name}</td><td>${p.current_unit}</td></tr>`
+                    tableHtml = `<table class="dataview-table"><thead><tr><th>File</th><th>Last Modified</th></tr></thead><tbody>`
+                    recentFiles.forEach(f => {
+                        tableHtml += `<tr><td><a href="./${f.path}">${f.name}</a></td><td>${f.mtime.toLocaleDateString()}</td></tr>`
                     })
                     tableHtml += `</tbody></table>`
+                }
 
-                    node.type = "html" as any
-                    node.value = tableHtml
-                  }
-                })()
-                promises.push(p)
-              }
-
-              // Handle Operations Tables
-              if (query.includes('from "operations"')) {
-                const p = (async () => {
-                    const opsPath = path.join(process.cwd(), "content", "Operations")
-                    if (fs.existsSync(opsPath)) {
-                      const getFiles = (dir: string): string[] => {
-                        const subdirs = fs.readdirSync(dir)
-                        const files = subdirs.map((subdir) => {
-                          const res = path.resolve(dir, subdir)
-                          return fs.statSync(res).isDirectory() ? getFiles(res) : res
+                // 2. PERSONNEL HANDLER
+                else if (query.includes('from "personnel')) {
+                    let personnel: any[] = []
+                    if (apiKey && unitId) {
+                        const apiData = await fetchUnitCommanderData(`units/${unitId}/members`, apiKey) || 
+                                        await fetchUnitCommanderData(`units/${unitId}/roster`, apiKey)
+                        if (apiData && Array.isArray(apiData)) {
+                            personnel = apiData.map(p => ({
+                                full_name: p.name || p.username,
+                                rank: p.rank?.name || "Unknown",
+                                current_unit: p.unit?.name || "Unassigned",
+                                rank_order: p.rank?.order || 99
+                            }))
+                        }
+                    }
+                    if (personnel.length === 0) {
+                        const files = getFiles(path.join(process.cwd(), "content", "Personnel", "Roster"))
+                        personnel = files.map(f => {
+                            const { data } = matter(fs.readFileSync(f, "utf-8"))
+                            return { ...data, path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", "") }
                         })
-                        return files.flat().filter(f => f.endsWith(".md"))
-                      }
-                      const allOpFiles = getFiles(opsPath)
-                      const operations = allOpFiles.map(f => {
-                        const content = fs.readFileSync(f, "utf-8")
-                        const { data } = matter(content)
-                        return data
-                      })
-    
-                      if (query.includes('status = "executing"') || query.includes('status = "in progress"')) {
-                        const activeOps = operations
-                          .filter(op => op.type === "CONOP" && (op.status === "Executing" || op.status === "In Progress"))
-    
-                        let tableHtml = `<table class="dataview-table"><thead><tr><th>Operation</th><th>Status</th></tr></thead><tbody>`
-                        activeOps.forEach(op => {
-                          tableHtml += `<tr><td>${op.op_name || "Unknown"}</td><td>${op.status}</td></tr>`
+                    }
+
+                    if (query.includes("hq") || query.includes("intelligence cell") || query.includes("tfhq")) {
+                        const staff = personnel
+                            .filter(p => p.current_unit && /HQ|Intelligence Cell|Med Det HQ|TFHQ/i.test(p.current_unit))
+                            .sort((a, b) => (a.rank_order || 99) - (b.rank_order || 99))
+
+                        tableHtml = `<table class="dataview-table"><thead><tr><th>Rank</th><th>Name</th><th>Unit</th></tr></thead><tbody>`
+                        staff.forEach(p => {
+                            tableHtml += `<tr><td>${p.rank || "Unknown"}</td><td><a href="./${p.path || 'Personnel/Roster/' + p.full_name}">${p.full_name}</a></td><td>${p.current_unit}</td></tr>`
                         })
                         tableHtml += `</tbody></table>`
-
-                        node.type = "html" as any
-                        node.value = tableHtml
-                      }
                     }
-                })()
-                promises.push(p)
-              }
+                }
+
+                // 3. OPERATIONS HANDLER
+                else if (query.includes('from "operations"')) {
+                    const files = getFiles(path.join(process.cwd(), "content", "Operations"))
+                    const operations = files.map(f => {
+                        const { data } = matter(fs.readFileSync(f, "utf-8"))
+                        return { ...data, path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", "") }
+                    })
+
+                    if (query.includes('executing') || query.includes('in progress')) {
+                        const active = operations.filter(op => op.type === "CONOP" && /Executing|In Progress/i.test(op.status))
+                        tableHtml = `<table class="dataview-table"><thead><tr><th>Operation</th><th>Status</th></tr></thead><tbody>`
+                        active.forEach(op => {
+                            tableHtml += `<tr><td><a href="./${op.path}">${op.op_name || op.path}</a></td><td>${op.status}</td></tr>`
+                        })
+                        tableHtml += `</tbody></table>`
+                    } 
+                    else if (query.includes('type = "aar"')) {
+                        const aars = operations.filter(op => op.type === "AAR").slice(0, 10)
+                        tableHtml = `<ul>`
+                        aars.forEach(op => {
+                            tableHtml += `<li><a href="./${op.path}">${op.op_name || op.path}</a></li>`
+                        })
+                        tableHtml += `</ul>`
+                    }
+                }
+
+                if (tableHtml) {
+                    node.type = "html" as any
+                    node.value = `<div class="dataview-emulation">${tableHtml}</div>`
+                } else {
+                    // Hide unhandled dataview blocks to keep site clean
+                    node.type = "html" as any
+                    node.value = `<!-- Unhandled Dataview Query -->`
+                }
+              })()
+              promises.push(p)
             }
           })
           await Promise.all(promises)
