@@ -1,0 +1,22 @@
+# Obsidian - Local user settings
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/cache.json
+.obsidian/bookmarks.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Private keys or secrets (just in case)
+*.pem
+*.key
+secrets.json
+.env

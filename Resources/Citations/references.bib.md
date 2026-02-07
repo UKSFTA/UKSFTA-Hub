@@ -1,0 +1,1 @@
+@article{Hermes2026, author = {NATO}, title = {Operation Silent Hermes – Nato Opord (1)}, year = {2026}, url = {Operations/Op-2026-01-14-Silent-Hermes/Operation Silent Hermes.pdf} }

@@ -1,0 +1,37 @@
+---
+type: "Personnel"
+full_name: "Derry"
+rank: "Trooper"
+rank_order: 19
+call_sign: "N/A"
+status: "Active"
+phase: "Active"
+current_unit: "SRR Team Alpha"
+date_joined: <% tp.date.now("YYYY-MM-DD") %>
+tags: [personnel, active]
+---
+
+# Trooper Derry
+
+## Service Record
+- **Rank:** Trooper
+- **Call Sign:** N/A
+- **Current Unit:** SRR Team Alpha
+- **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
+
+---
+
+## Training Progression
+- **Current Phase:** Active
+
+### Completed Courses
+- [ ] Basic Training
+- [ ] Static Line Para
+- [ ] CBRN
+- [ ] Medical Training
+- [ ] Anti Tank Weapons
+- [ ] Crew Served Weapons
+
+---
+
+## Memos & Assessments
