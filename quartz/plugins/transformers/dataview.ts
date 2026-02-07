@@ -20,7 +20,6 @@ async function fetchUnitCommanderData(endpoint: string, apiKey: string) {
   }
 }
 
-// Helper to recursively get files
 const getFiles = (dir: string): string[] => {
     if (!fs.existsSync(dir)) return []
     const subdirs = fs.readdirSync(dir)
@@ -31,9 +30,25 @@ const getFiles = (dir: string): string[] => {
     return files.flat().filter(f => f.endsWith(".md"))
 }
 
+// Clean up malformed YAML and Templater tags
+function cleanMetadata(content: string): string {
+    // 1. Replace curly quotes with straight quotes
+    let cleaned = content.replace(/[“”]/g, '"').replace(/[‘’]/g, "'")
+    
+    // 2. Replace Templater date tags with a static date (Today)
+    const today = new Date().toISOString().split('T')[0]
+    cleaned = cleaned.replace(/<% tp\.date\.now\(.*?\) %>/g, today)
+    
+    return cleaned
+}
+
 export const DataviewEmulation: QuartzTransformerPlugin = () => {
   return {
     name: "DataviewEmulation",
+    textTransform(_ctx, src) {
+        // Run the metadata cleaner on every file before it's parsed
+        return cleanMetadata(typeof src === 'string' ? src : src.toString())
+    },
     markdownPlugins() {
       return [
         () => async (tree: Parent) => {
@@ -48,7 +63,6 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
               const p = (async () => {
                 let tableHtml = ""
                 
-                // 1. RECENT ACTIVITY HANDLER
                 if (query.includes('file.mtime') && query.includes('limit 10')) {
                     const allFiles = getFiles(path.join(process.cwd(), "content"))
                     const recentFiles = allFiles
@@ -68,7 +82,6 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                     tableHtml += `</tbody></table>`
                 }
 
-                // 2. PERSONNEL HANDLER
                 else if (query.includes('from "personnel')) {
                     let personnel: any[] = []
                     if (apiKey && unitId) {
@@ -86,7 +99,7 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                     if (personnel.length === 0) {
                         const files = getFiles(path.join(process.cwd(), "content", "Personnel", "Roster"))
                         personnel = files.map(f => {
-                            const { data } = matter(fs.readFileSync(f, "utf-8"))
+                            const { data } = matter(cleanMetadata(fs.readFileSync(f, "utf-8")))
                             return { ...data, path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", "") }
                         })
                     }
@@ -104,11 +117,10 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                     }
                 }
 
-                // 3. OPERATIONS HANDLER
                 else if (query.includes('from "operations"')) {
                     const files = getFiles(path.join(process.cwd(), "content", "Operations"))
                     const operations = files.map(f => {
-                        const { data } = matter(fs.readFileSync(f, "utf-8"))
+                        const { data } = matter(cleanMetadata(fs.readFileSync(f, "utf-8")))
                         return { ...data, path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", "") }
                     })
 
@@ -120,21 +132,12 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                         })
                         tableHtml += `</tbody></table>`
                     } 
-                    else if (query.includes('type = "aar"')) {
-                        const aars = operations.filter(op => op.type === "AAR").slice(0, 10)
-                        tableHtml = `<ul>`
-                        aars.forEach(op => {
-                            tableHtml += `<li><a href="./${op.path}">${op.op_name || op.path}</a></li>`
-                        })
-                        tableHtml += `</ul>`
-                    }
                 }
 
                 if (tableHtml) {
                     node.type = "html" as any
                     node.value = `<div class="dataview-emulation">${tableHtml}</div>`
                 } else {
-                    // Hide unhandled dataview blocks to keep site clean
                     node.type = "html" as any
                     node.value = `<!-- Unhandled Dataview Query -->`
                 }
