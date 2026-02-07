@@ -49,6 +49,42 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                   }
                 }
               }
+
+              // Handle Operations Tables
+              if (query.includes('from "operations"')) {
+                const opsPath = path.join(process.cwd(), "content", "Operations")
+                if (fs.existsSync(opsPath)) {
+                  // Recursive search for .md files in Operations
+                  const getFiles = (dir: string): string[] => {
+                    const subdirs = fs.readdirSync(dir)
+                    const files = subdirs.map((subdir) => {
+                      const res = path.resolve(dir, subdir)
+                      return fs.statSync(res).isDirectory() ? getFiles(res) : res
+                    })
+                    return files.flat().filter(f => f.endsWith(".md"))
+                  }
+
+                  const allOpFiles = getFiles(opsPath)
+                  const operations = allOpFiles.map(f => {
+                    const content = fs.readFileSync(f, "utf-8")
+                    const { data } = matter(content)
+                    return data
+                  })
+
+                  if (query.includes('status = "executing"') || query.includes('status = "in progress"')) {
+                    const activeOps = operations
+                      .filter(op => op.type === "CONOP" && (op.status === "Executing" || op.status === "In Progress"))
+
+                    let table = "| Operation Name | Status |\n| :--- | :--- |\n"
+                    activeOps.forEach(op => {
+                      table += `| ${op.op_name || "Unknown"} | ${op.status} |\n`
+                    })
+
+                    node.type = "html"
+                    node.value = `<div class="dataview-emulation">${table}</div>`
+                  }
+                }
+              }
             }
           })
         },
