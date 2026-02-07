@@ -7,20 +7,15 @@ import matter from "gray-matter"
 
 async function fetchUnitCommanderData(endpoint: string, apiKey: string) {
   try {
-    console.log(`[Dataview] Fetching from UnitCommander: ${endpoint}`)
     const response = await fetch(`https://api.unitcommander.co.uk/api/v1/${endpoint}`, {
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Accept': 'application/json'
       }
     })
-    if (!response.ok) {
-        console.log(`[Dataview] API Error: ${response.status}`)
-        return null
-    }
+    if (!response.ok) return null
     return await response.json()
   } catch (e) {
-    console.error(`[Dataview] Fetch Exception: ${e}`)
     return null
   }
 }
@@ -39,18 +34,17 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
               const apiKey = process.env.UNIT_COMMANDER_BOT_TOKEN
               const unitId = process.env.UNIT_COMMANDER_COMMUNITY_ID
 
-              console.log(`[Dataview] Found block with query: ${query.substring(0, 50)}...`)
-
               // Handle Personnel Tables
               if (query.includes('from "personnel/roster"') || query.includes('from "personnel"')) {
                 const p = (async () => {
                   let personnel: any[] = []
 
-                  // Try API first
                   if (apiKey && unitId) {
-                    const apiData = await fetchUnitCommanderData(`units/${unitId}/members`, apiKey)
+                    // Try different potential endpoints
+                    const apiData = await fetchUnitCommanderData(`units/${unitId}/members`, apiKey) || 
+                                    await fetchUnitCommanderData(`units/${unitId}/roster`, apiKey)
+                    
                     if (apiData && Array.isArray(apiData)) {
-                      console.log(`[Dataview] API returned ${apiData.length} members`)
                       personnel = apiData.map(p => ({
                         full_name: p.name || p.username,
                         rank: p.rank?.name || "Unknown",
@@ -60,12 +54,10 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                     }
                   }
 
-                  // Fallback to local
                   if (personnel.length === 0) {
                     const rosterPath = path.join(process.cwd(), "content", "Personnel", "Roster")
                     if (fs.existsSync(rosterPath)) {
                       const files = fs.readdirSync(rosterPath).filter(f => f.endsWith(".md"))
-                      console.log(`[Dataview] Using local fallback: ${files.length} files found`)
                       personnel = files.map(f => {
                         const content = fs.readFileSync(path.join(rosterPath, f), "utf-8")
                         const { data } = matter(content)
@@ -84,18 +76,14 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                       ))
                       .sort((a, b) => (a.rank_order || 99) - (b.rank_order || 99))
 
-                    let table = "| Rank | Name | Unit |\n| :--- | :--- | :--- |\n"
+                    let tableHtml = `<table class="dataview-table"><thead><tr><th>Rank</th><th>Name</th><th>Unit</th></tr></thead><tbody>`
                     staff.forEach(p => {
-                      table += `| ${p.rank || "Unknown"} | [[Personnel/Roster/${p.full_name}\|${p.full_name}]] | ${p.current_unit} |\n`
+                      tableHtml += `<tr><td>${p.rank || "Unknown"}</td><td>${p.full_name}</td><td>${p.current_unit}</td></tr>`
                     })
+                    tableHtml += `</tbody></table>`
 
-                    // Replace the node with raw markdown instead of HTML
-                    const replacementNode: Node = {
-                        type: "paragraph",
-                        children: [{ type: "text", value: table }]
-                    }
-                    parent.children.splice(index, 1, replacementNode)
-                    console.log(`[Dataview] Replaced personnel table.`)
+                    node.type = "html" as any
+                    node.value = tableHtml
                   }
                 })()
                 promises.push(p)
@@ -114,7 +102,6 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                         })
                         return files.flat().filter(f => f.endsWith(".md"))
                       }
-    
                       const allOpFiles = getFiles(opsPath)
                       const operations = allOpFiles.map(f => {
                         const content = fs.readFileSync(f, "utf-8")
@@ -126,17 +113,14 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                         const activeOps = operations
                           .filter(op => op.type === "CONOP" && (op.status === "Executing" || op.status === "In Progress"))
     
-                        let table = "| Operation Name | Status |\n| :--- | :--- |\n"
+                        let tableHtml = `<table class="dataview-table"><thead><tr><th>Operation</th><th>Status</th></tr></thead><tbody>`
                         activeOps.forEach(op => {
-                          table += `| ${op.op_name || "Unknown"} | ${op.status} |\n`
+                          tableHtml += `<tr><td>${op.op_name || "Unknown"}</td><td>${op.status}</td></tr>`
                         })
-    
-                        const replacementNode: Node = {
-                            type: "paragraph",
-                            children: [{ type: "text", value: table }]
-                        }
-                        parent.children.splice(index, 1, replacementNode)
-                        console.log(`[Dataview] Replaced operations table.`)
+                        tableHtml += `</tbody></table>`
+
+                        node.type = "html" as any
+                        node.value = tableHtml
                       }
                     }
                 })()
