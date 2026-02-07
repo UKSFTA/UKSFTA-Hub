@@ -16,16 +16,6 @@
 
 <br>
 
-### Phase 1: Recruitment
-```dataview
-TABLE WITHOUT ID
-    link(file.link, full_name) AS "Candidate",
-    date_joined AS "Application Date"
-FROM "Personnel"
-WHERE status = "Application" OR status = "Interview"
-SORT date_joined ASC
-```
-
 ### Phase 2: Basic Training (SFSG)
 ```dataview
 TABLE WITHOUT ID

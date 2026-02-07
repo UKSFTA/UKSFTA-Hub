@@ -7,7 +7,8 @@ This repository acts as the **Single Source of Truth (SSOT)** for the UKSF Taskf
 ## 📂 Data Structure
 
 ### Personnel (`/Personnel/Roster/*.md`)
-Personnel data is stored as Markdown files with YAML Frontmatter.
+Personnel data is stored as Markdown files with YAML Frontmatter. Note that **Initial Applications/Candidates** are managed via the external database; once accepted into the unit, the bot generates their entry in this repository.
+
 **Key Fields for Bot Parsing:**
 - `full_name`: Display name.
 - `rank`: Used for Discord Role sync.
