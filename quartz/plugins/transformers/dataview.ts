@@ -57,15 +57,19 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
               const p = (async () => {
                 let tableHtml = ""
                 
-                // 1. RECENT ACTIVITY
-                if (query.includes('file.mtime') && query.includes('limit 10')) {
+                // 1. RECENT ACTIVITY (HUB)
+                // Specific match for the Hub's recent activity query
+                if (query.includes('file.mtime') && query.includes('where file.name != this.file.name')) {
                     const allFiles = getFiles(path.join(process.cwd(), "content"))
                     const recentFiles = allFiles
-                        .map(f => ({
-                            name: path.basename(f, ".md"),
-                            path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", ""),
-                            mtime: fs.statSync(f).mtime
-                        }))
+                        .map(f => {
+                            const stat = fs.statSync(f)
+                            return {
+                                name: path.basename(f, ".md"),
+                                path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", ""),
+                                mtime: stat.mtime
+                            }
+                        })
                         .filter(f => f.name !== "index" && !f.path.includes(".obsidian"))
                         .sort((a, b) => b.mtime.getTime() - a.mtime.getTime())
                         .slice(0, 10)
@@ -117,7 +121,8 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                 else if (query.includes('from "operations"')) {
                     const files = getFiles(path.join(process.cwd(), "content", "Operations"))
                     const operations = files.map(f => {
-                        const { data } = matter(cleanMetadata(fs.readFileSync(f, "utf-8")))
+                        const content = fs.readFileSync(f, "utf-8")
+                        const { data } = matter(cleanMetadata(content))
                         const name = path.basename(f, ".md")
                         return { 
                             ...data, 
@@ -126,11 +131,11 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                         }
                     })
 
-                    // Handle Active Ops
-                    if (query.includes('executing') || query.includes('in progress')) {
+                    // Handle Active Ops / Planning Summary
+                    if (query.includes('executing') || query.includes('in progress') || query.includes('status = "executing"')) {
                         const active = operations.filter(op => 
-                            (op.type === "CONOP" || op.fileName.includes("CONOP")) && 
-                            /Executing|In Progress|Active/i.test(op.status || "")
+                            (op.type === "CONOP" || op.fileName.startsWith("CONOP")) && 
+                            /Executing|In Progress|Active|Approved|Planning/i.test(op.status || "")
                         )
                         if (active.length > 0) {
                             tableHtml = `<table class="dataview-table"><thead><tr><th>Operation</th><th>Status</th></tr></thead><tbody>`
@@ -139,7 +144,7 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                             })
                             tableHtml += `</tbody></table>`
                         } else {
-                            tableHtml = `<p>No active operations found in database.</p>`
+                            tableHtml = `<p>No active or approved operations found.</p>`
                         }
                     } 
                     // Handle AARs
