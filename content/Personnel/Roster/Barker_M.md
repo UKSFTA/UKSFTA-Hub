@@ -1,4 +1,3 @@
----
 type: "Personnel"
 full_name: "M. Barker"
 rank: "Sergeant"

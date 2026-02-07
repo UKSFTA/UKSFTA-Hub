@@ -1,4 +1,3 @@
----
 type: "Personnel"
 full_name: "Nyuu.exe"
 rank: "Private"

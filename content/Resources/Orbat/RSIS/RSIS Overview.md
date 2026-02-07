@@ -1,6 +1,3 @@
-
----
-
 ### **RSIS Branch Briefing: Tactical Intelligence & Exploitation (TIE)**
 
 The Royal Secret Intelligence Service (RSIS) is the specialist exploitation arm of the unit. While the **Int Corps** writes the story, RSIS dismantles the enemy network on the ground. You are the "Technical Edge" that tells SF which doors to kick.

@@ -1,4 +1,3 @@
----
 type: "CONOP"
 op_name: ""
 op_num: ""

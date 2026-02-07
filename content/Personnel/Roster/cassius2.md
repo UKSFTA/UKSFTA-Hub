@@ -1,4 +1,3 @@
----
 type: "Personnel"
 full_name: "cassius2"
 rank: "Recruit"

@@ -1,4 +1,3 @@
----
 type: "Personnel"
 full_name: "Coburn"
 rank: "Trooper"

@@ -1,0 +1,275 @@
+{
+  "main": {
+    "id": "af16c0e7539caa58",
+    "type": "split",
+    "children": [
+      {
+        "id": "728e7e1ed750612f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "646fb9c0c1f8a8cf",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "770586d65f710f3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "17167efde0d5199c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7da268ee4e88803b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ab7b0c6f1b754e31",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "159ca034300a8695",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 370
+  },
+  "right": {
+    "id": "041b8292cb4eaa61",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f37b419aee26532",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "308aaaac350b97dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "03455b39c23eed35",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a83d9797ce2954f4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4a91af45f539b227",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "all-properties"
+            }
+          },
+          {
+            "id": "7019fcb262b3cf0e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "84fb39316de6c147",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "790e291397e11172",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "UKSF Taskforce Alpha/Logistics/Logistics Dashboard.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "ef2343b90ac62034",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "copilot-chat-view"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "7da268ee4e88803b",
+  "lastOpenFiles": [
+    "index.md",
+    "content/Projects/Owl's Eye.md",
+    "content/Projects",
+    "content/README.md",
+    "content/ORBAT.md",
+    "content/Intel Dashboard.md",
+    "content/Dashboards.md",
+    "content/00 - UKSF Taskforce Alpha Hub.md",
+    "content/Units/SRR/Training/Assessments/Results/Initial Candidate Evaluation (ICE) - Fiadh.md",
+    "content/Operations/Op-2026-01-07-Iron-Retribution/Resources/Intel/Persons_of_Interest/Malik Sapran.md",
+    "content/Units/SRR/Training/Templates/Templates-Dashboard.md",
+    "content/Units/SRR/Training/Templates/Field Intelligence Report.md",
+    "content/Units/SRR/Training/Templates/Field Intelligence Report Opfor.md",
+    "content/Units/SRR/Training/Reference/Technical-Standards.md",
+    "content/Units/SRR/Training/Reference/Priority Intelligence Requirements (PIR).md",
+    "content/Units/SRR/Training/Curriculum/Curriculum.md",
+    "content/Units/SRR/Training/Assessments/Results",
+    "content/Units/SRR/Training/Assessments/Initial Candidate Evaluation (ICE).md",
+    "content/Units/SRR/Training/Assessments/Initial Candidate Evaluation (ICE) Answers.md",
+    "content/Units/SRR/Training/Assessments/ICE-Scoring.md",
+    "content/Units/SRR/Training/Assessments/Field Skills Assessment.md",
+    "content/Units/SRR/Training/Assessments/Assessments-Dashboard.md",
+    "content/Units/SBS/Training/Templates/Templates-Dashboard.md",
+    "content/Units/SBS/Training/Templates/Field Intelligence Report.md",
+    "content/Units/SBS/Training/Reference/Technical-Standards.md",
+    "content/Units/SBS/Training/Reference/Priority Intelligence Requirements (PIR).md",
+    "content/Units/SBS/Training/Curriculum/Curriculum.md",
+    "content/Units/SBS/Training/Assessments/SBS-ICE.md",
+    "content/Units/SBS/Training/Assessments/Results",
+    "content/Units/SAS/Training/Assessments/Results",
+    "content/Units/RSIS/Training/Assessments/Results",
+    "content/Operations/Op-2026-01-07-Iron-Retribution/Resources/Intel/Persons_of_Interest",
+    "content/Operations/Op-2026-01-07-Iron-Retribution/Resources/Documents/Operation Silent Hermes.pdf",
+    "content/Operations/Op-2026-01-07-Iron-Retribution/Resources/Documents/Operation Iron Retribution.pdf",
+    "content/Operations/Op-2026-01-07-Iron-Retribution/Resources/Documents/Mission 2 Hvts – Intelligence Linkage From Mission 1.pdf",
+    "content/Operations/Op-2026-01-07-Iron-Retribution/Resources/Documents/Mission 1 – Ferryman Financial Ledger (editable).pdf",
+    "content/Operations/Op-2026-01-07-Iron-Retribution/Intel/IMINT/2026-01-07_IMINT_Message_001.jpg",
+    "content/Resources/Orbat/Images/medic.png",
+    "content/Resources/Orbat/Images/UKSF.png",
+    "content/Resources/Orbat/Images/Troop-RAC.png",
+    "content/Resources/Orbat/Images/TFA.png",
+    "content/Resources/Orbat/Images/SRR.png",
+    "content/Resources/Orbat/Images/SFSG.png",
+    "content/Resources/Orbat/Images/SBS.png",
+    "content/Resources/Orbat/Images/SAS.png",
+    "content/Resources/Orbat/Images/JSFAW.png",
+    "content/Resources/Orbat/Canvas/ORBAT.canvas",
+    "Resources/Orbat/Canvas/ORBAT.canvas",
+    "UKSF Taskforce Alpha/Resources/Orbat/Canvas/ORBAT.canvas"
+  ]
+}

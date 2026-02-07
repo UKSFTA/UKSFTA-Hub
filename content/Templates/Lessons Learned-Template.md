@@ -1,4 +1,3 @@
----
 type: "Lesson Learned"
 op_name: ""
 op_num: ""

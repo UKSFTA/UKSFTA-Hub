@@ -1,4 +1,3 @@
----
 type: "Personnel"
 full_name: "J. Smout"
 rank: "Trooper"

@@ -1,4 +1,3 @@
----
 type: "Personnel"
 full_name: "N. Hodge"
 rank: "Warrant Officer Class 2"

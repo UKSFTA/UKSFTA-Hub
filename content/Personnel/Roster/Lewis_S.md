@@ -1,4 +1,3 @@
----
 type: "Personnel"
 full_name: "S. Lewis"
 rank: "Trooper"

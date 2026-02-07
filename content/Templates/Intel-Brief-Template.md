@@ -1,4 +1,3 @@
----
 type: "Intel Brief"
 op_name: ""
 op_num: ""

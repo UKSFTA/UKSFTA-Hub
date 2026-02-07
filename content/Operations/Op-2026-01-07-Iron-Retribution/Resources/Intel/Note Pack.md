@@ -1,5 +1,3 @@
-
-
 - **Mission**: UKSF Task Force Alpha to conduct covert operations in DPRK to:
     
     - Locate, verify, and exploit undeclared strategic missile infrastructure.

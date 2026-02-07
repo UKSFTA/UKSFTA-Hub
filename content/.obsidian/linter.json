@@ -1,0 +1,67 @@
+{
+  "lintOnSave": true,
+  "lintOnFileChange": false,
+  "displayChanged": true,
+  "set[tabSize]": 2,
+  "set[ulIndent]": 2,
+  "set[liIndent]": 0,
+  "set[bulletChar]": "-",
+  "ruleConfigs": {
+    "heading-style": {
+      "style": "atx"
+    },
+    "no-duplicate-headings": true,
+    "no-trailing-spaces": true,
+    "no-multiple-blanks": true,
+    "no-unnecessary-parentheses": true,
+    "no-inline-html": true,
+    "no-bare-urls": true,
+    "code-block-style": {
+      "style": "fenced"
+    },
+    "ordered-list-style": {
+      "style": "ordered"
+    },
+    "unordered-list-style": {
+      "style": "dash"
+    },
+    "line-length": {
+      "max": 100,
+      "strict": false
+    },
+    "remove-trailing-newlines": true,
+    "space-around-star": true,
+    "space-between-link-title-and-url": true,
+    "strikethrough-style": {
+      "style": "two-tilde"
+    },
+    "table-pipe-style": {
+      "style": "spaces"
+    },
+    "two-spaces-between-lines": false,
+    "front-matter-key-sort": {
+      "keys": [
+        "type",
+        "name",
+        "op_name",
+        "op_num",
+        "full_name",
+        "rank",
+        "call_sign",
+        "status",
+        "current_unit",
+        "date_joined",
+        "category",
+        "serial_number",
+        "assigned_to",
+        "location",
+        "last_maintenance",
+        "next_maintenance",
+        "date",
+        "time",
+        "tags"
+      ]
+    },
+    "force-front-matter-comma": false
+  }
+}
