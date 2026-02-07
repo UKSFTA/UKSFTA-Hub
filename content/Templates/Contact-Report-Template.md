@@ -8,7 +8,7 @@ location: ""
 
 # Contact Report - <% tp.date.now("YYYY-MM-DD HH:mm") %>
 
-**Operation:** [[<% tp.file.cursor(1) %>]]
+**Operation:** [[<%-tp.file.cursor(1)-%>]]
 **Date/Time of Contact:** <% tp.date.now("DD/MM/YYYY HH:mm") %>
 **Location of Contact:** <% tp.file.cursor(2) %> (Grid Reference or Description)
 **Reporting Unit:** <% tp.file.cursor(3) %>

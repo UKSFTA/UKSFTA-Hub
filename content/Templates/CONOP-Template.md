@@ -6,7 +6,7 @@ start_date: <% tp.date.now("YYYY-MM-DD") %>
 end_date: ""
 ---
 # CONOP: [Operation/Mission Name]
-**Reference:** [[Related Op Order]]
+**Reference:** [[Related-Op-Order]]
 **Date/Time:** <% tp.date.now("YYYY-MM-DD HH:mm") %>
 **Author:** {{author}}
 
@@ -14,7 +14,7 @@ end_date: ""
 
 ## 1. Situation
 *A brief overview of the environment.*
-- **Ground:** [[Terrain Analysis]], Key Features.
+- **Ground:** [[Terrain-Analysis]], Key Features.
 - **Enemy (ENY):** Most Likely/Most Dangerous Course of Action (MLCOA/MDCOA).
 - **Friendly (FR):** Higher Commander's Intent (1 and 2 levels up).
 - **Atts & Detts:** Who is joined or leaving the unit for this phase.
@@ -38,9 +38,9 @@ end_date: ""
 *The one activity or unit that is critical to the success of the mission.*
 
 ### Task Org
-- **Lead Element:** [[Unit Name]]
-- **Support Element:** [[Unit Name]]
-- **Reserve:** [[Unit Name]]
+- **Lead Element:** [[Unit-Name]]
+- **Support Element:** [[Unit-Name]]
+- **Reserve:** [[Unit-Name]]
 
 ---
 
@@ -48,8 +48,8 @@ end_date: ""
 - **Timings:**
   - H-Hour: 
   - NLT (No Later Than):
-- **Boundaries:** [[Map Overlay Link]]
-- **Rules of Engagement (ROE):** [[ROE Profile Alpha]]
+- **Boundaries:** [[Map-Overlay-Link]]
+- **Rules of Engagement (ROE):** [[ROE-Profile-Alpha]]
 
 ---
 

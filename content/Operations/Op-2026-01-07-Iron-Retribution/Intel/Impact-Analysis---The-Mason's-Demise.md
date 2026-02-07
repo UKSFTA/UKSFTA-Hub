@@ -7,14 +7,14 @@ RELEASABLE TO: UKSF, MI6
 **IMPACT ANALYSIS: NEUTRALIZATION OF 'THE MASON'**
 
 **REF:**
-A. [[2026-01-07_CaseFile_Persons_of_interest|POI File UKSF-J2-POI-2026-01-07]]
-B. [[2026-01-07_SIGINT_Intercept_XR49-B7S|SIGINT UKSF-GCHQ-SIGINT-26-0049B7S]]
+A. [[2026-01-07_CaseFile_Persons_of_interest|POI-File-UKSF-J2-POI-2026-01-07]]
+B. [[2026-01-07_SIGINT_Intercept_XR49-B7S|SIGINT-UKSF-GCHQ-SIGINT-26-0049B7S]]
 
 ---
 
 **1. SUBJECT**
 
-Analysis of the operational and strategic impact following the confirmed neutralization (KIA) of hostile actor '[[2026-01-07_CaseFile_Persons_of_interest|THE MASON]]' (Ref A).
+Analysis of the operational and strategic impact following the confirmed neutralization (KIA) of hostile actor '[[2026-01-07_CaseFile_Persons_of_interest|THE-MASON]]' (Ref A).
 
 **2. IMMEDIATE IMPACT ASSESSMENT**
 
@@ -24,8 +24,8 @@ a. **Network Command and Control (C2):**
     (3) Communications and logistical chains are likely to be disorganized, presenting a window of opportunity for further disruption and intelligence gathering.
 
 b. **Impact on Key Associates:**
-    (1) **[[2026-01-07_CaseFile_Persons_of_interest|ABU MIRAJ]] (Captured):** MIRAJ has lost his primary handler and director. His future utility to the network is now dependent on who, if anyone, takes control. His psychological dependency on a figure like THE MASON may be transferable to his captors if exploited correctly.
-    (2) **[[2026-01-07_CaseFile_Persons_of_interest|THE FERRYMAN]] (Active):** Has lost his primary point of contact within the Lythium network. He may temporarily go to ground, or he may attempt to assert control himself or establish contact with a new leader. He is currently isolated from his ground-level network.
+    (1) **[[2026-01-07_CaseFile_Persons_of_interest|ABU-MIRAJ]] (Captured):** MIRAJ has lost his primary handler and director. His future utility to the network is now dependent on who, if anyone, takes control. His psychological dependency on a figure like THE MASON may be transferable to his captors if exploited correctly.
+    (2) **[[2026-01-07_CaseFile_Persons_of_interest|THE-FERRYMAN]] (Active):** Has lost his primary point of contact within the Lythium network. He may temporarily go to ground, or he may attempt to assert control himself or establish contact with a new leader. He is currently isolated from his ground-level network.
 
 c. **Network Cohesion:**
     (1) High probability of an internal power struggle to fill the vacuum left by THE MASON.

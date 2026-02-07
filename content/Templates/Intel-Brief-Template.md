@@ -36,5 +36,5 @@ op_num: ""
 
 ---
 ## Annex
-- [[Map of AO]]
-- [[Link to satellite imagery]]
+- [[Map-of-AO]]
+- [[Link-to-satellite-imagery]]

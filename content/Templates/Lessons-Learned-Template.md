@@ -11,7 +11,7 @@ tags: [lessons_learned]
 # Lesson Learned: <% tp.file.cursor(1) %>
 
 ## 1. Operation/Exercise Details
--   **Operation Name:** [[<% tp.file.cursor(2) %>]] (e.g., [[Op-2025-001-Example]])
+-   **Operation Name:** [[<%-tp.file.cursor(2)-%>]] (e.g., [[Op-2025-001-Example]])
 -   **Operation Number:** <% tp.file.cursor(3) %>
 -   **Date of Incident/Observation:** <% tp.date.now("YYYY-MM-DD") %>
 -   **Category:** <% tp.file.cursor(4) %> (e.g., Planning, Execution, Equipment, Personnel, Intelligence)

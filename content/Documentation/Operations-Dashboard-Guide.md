@@ -26,7 +26,7 @@ This guide defines the protocols for the operational management system and the l
 ---
 
 ## DASHBOARD SYNCHRONIZATION
-The [[Operations/Operation Dashboard|Operations Dashboard]] utilizes Dataview to aggregate all operational data. Accuracy in file metadata is critical for real-time command oversight.
+The [[Operations/Operation-Dashboard|Operations-Dashboard]] utilizes Dataview to aggregate all operational data. Accuracy in file metadata is critical for real-time command oversight.
 
 ---
 **"Everywhere, Unseen"**

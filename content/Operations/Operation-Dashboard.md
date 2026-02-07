@@ -94,6 +94,6 @@ LIMIT 10
 
 ---
 > [!NOTE] Documentation
-> For detailed instructions on the operational cycle, refer to the [[Documentation/Operations-Dashboard-Guide|Operations Dashboard Guide]].
+> For detailed instructions on the operational cycle, refer to the [[Documentation/Operations-Dashboard-Guide|Operations-Dashboard-Guide]].
 
 **"Everywhere, Unseen"**

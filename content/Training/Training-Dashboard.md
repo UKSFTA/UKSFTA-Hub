@@ -1,10 +1,10 @@
 # UKSF Training Dashboard
 
 ## Unit Training Dashboards
-- [[Units/SAS/Training/Training|SAS Training Hub]]
-- [[Units/SBS/Training/Training|SBS Training Hub]]
-- [[Units/SRR/Training/Training|SRR Training Hub]]
-- [[Units/RSIS/Training/Training|RSIS Training Hub]]
+- [[Units/SAS/Training/Training|SAS-Training-Hub]]
+- [[Units/SBS/Training/Training|SBS-Training-Hub]]
+- [[Units/SRR/Training/Training|SRR-Training-Hub]]
+- [[Units/RSIS/Training/Training|RSIS-Training-Hub]]
 
 ---
 
@@ -12,7 +12,7 @@
 *This board tracks all candidates through the UKSF selection and training process.*
 
 > [!NOTE] Documentation
-> For instructions on how to use this dashboard, see the [[Documentation/Training-Dashboard-Guide|Training Dashboard Guide]].
+> For instructions on how to use this dashboard, see the [[Documentation/Training-Dashboard-Guide|Training-Dashboard-Guide]].
 
 <br>
 
@@ -65,5 +65,5 @@ WHERE status = "Active"
 ---
 
 ## Training Resources
-- [[Training/UKSF Progression.pdf]]
+- [[Training/UKSF-Progression.pdf]]
 - *Add links to training modules and resources here.*

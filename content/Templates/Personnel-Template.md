@@ -13,7 +13,7 @@ tags: [personnel, candidate]
 
 ## Service Record
 - **Rank:** {{rank}}
-- *See [[Documentation/UK-Military-Ranks|UK Military Ranks]] for a list of official ranks.*
+- *See [[Documentation/UK-Military-Ranks|UK-Military-Ranks]] for a list of official ranks.*
 - **Call Sign:** {{call_sign}}
 - **Current Unit:** {{current_unit}}
 - **Date Joined:** {{date_joined}}

@@ -17,9 +17,9 @@ This dashboard serves as the central hub for all Special Reconnaissance Regiment
 
 ### PHASE 1: SELECTION & INITIAL EVALUATION (ICE)
 The **Initial Candidate Evaluation (ICE)** is designed to verify a candidate's theoretical knowledge of Special Reconnaissance doctrine and their aptitude for covert operations.
-- [ ] [ICE Theory Assessment](Assessments/Initial%20Candidate%20Evaluation%20(ICE).md)
-- [ ] Physical Fitness Assessment (PFA)
-- [ ] Selection Board Interview
+- [ ] [ICE Theory Assessment](Assessments/Initial-Candidate-Evaluation-(ICE).md)
+- [ ] [Covert Infiltration Assessment](Assessments/Field-Skills-Assessment.md)
+- [ ] Technical Standards Validation (ACE/ACRE/cTAB)
 
 ### PHASE 2: CORE SKILLS (THE "BLACK COURSE")
 Candidates undergo intensive training in the fundamental skills of the SRR operator.
