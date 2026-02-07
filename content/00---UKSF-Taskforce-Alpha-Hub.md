@@ -50,8 +50,8 @@ SORT (end_date - date("now")).days ASC
 ## Resources & Documentation
 
 -   **[[ORBAT|Order-of-Battle-(ORBAT)]]**: View the hierarchical structure and key personnel of the task force.
--   **[[Documentation|Documentation]]**: Guides and documentation for using this system.
--   **[[Templates|Templates]]**: All available templates.
+-   **[[Documentation/Operations-Dashboard-Guide|Documentation]]**: Guides and documentation for using this system.
+-   **[[Templates/AAR-Template|Templates]]**: All available templates.
 
 ---
 
