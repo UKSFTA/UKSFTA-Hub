@@ -8,7 +8,7 @@ This dashboard provides the command-level overview of all active, planned, and h
 // Dynamic Mission Status Board
 let operations = dv.pages('"Operations"')
     .where(p => p.file.name.startsWith("Op-")) // Filter for operation folders/notes (CONOPs)
-    .sort(p => p.op-num, "desc");
+    .sort(p => p["op-num"], "desc");
 
 // Define custom statuses to make it easier to group
 const getMissionPhase = (status) => {
