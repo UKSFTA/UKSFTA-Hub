@@ -5,14 +5,14 @@ Standardized reporting forms and documentation for SAS personnel.
 -
 
 ## INTELLIGENCE & RECONNAISSANCE
-- [Field Intelligence Report](Field%20Intelligence%20Report.md) - Standard patrol and reccenaissance reporting.
-- [Target Briefing](../../../Templates/Intel-Brief-Template.md) - Detailed profile of operational objectives.
+- [[Field%20Intelligence%20Report|Field Intelligence Report]] - Standard patrol and reccenaissance reporting.
+- [[Templates/Intel-Brief-Template|Target Briefing]] - Detailed profile of operational objectives.
 
 -
 
 ## COMMUNICATIONS & TACTICAL REPORTS
-- [Contact Report](../../../Templates/Contact-Report-Template.md)
-- [AAR Template](../../../Templates/AAR-Template.md)
+- [[Templates/Contact-Report-Template|Contact Report]]
+- [[Templates/AAR-Template|AAR Template]]
 
 -
 **Note: All reports must be sanitized and timestamped prior to submission to Troop HQ.**

@@ -5,12 +5,12 @@ This folder contains the formalized theoretical and practical assessments for SA
 -
 
 ## THEORETICAL ASSESSMENTS
-- [Initial Candidate Evaluation (ICE)](SAS-ICE.md) - Phase 1 entry test.
+- [[SAS-ICE|Initial Candidate Evaluation (ICE)]] - Phase 1 entry test.
 
 -
 
 ## PRACTICAL ASSESSMENTS
-- [Patrol Skills Assessment](Patrol-Skills.md) - Navigation and Tactical Contact Drills.
+- [[Patrol-Skills|Patrol Skills Assessment]] - Navigation and Tactical Contact Drills.
 
 -
 

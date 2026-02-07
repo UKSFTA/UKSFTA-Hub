@@ -11,8 +11,8 @@ This folder contains the formalized theoretical and practical assessments for SR
 -
 
 ## PRACTICAL ASSESSMENTS
-- [Field Skills Assessment](Field%20Skills%20Assessment.md) - Navigation, Camouflage, and Observation.
-- [ICE Scoring](ICE-Scoring.md) - Practical scoring metrics.
+- [[Field%20Skills%20Assessment|Field Skills Assessment]] - Navigation, Camouflage, and Observation.
+- [[ICE-Scoring|ICE Scoring]] - Practical scoring metrics.
 
 -
 

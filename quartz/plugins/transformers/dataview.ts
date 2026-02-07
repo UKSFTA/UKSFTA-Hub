@@ -56,8 +56,9 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
 
               const p = (async () => {
                 let tableHtml = ""
+                let useMarkdown = false
                 
-                // 1. RECENT ACTIVITY (HUB)
+                // 1. RECENT ACTIVITY
                 if (query.includes('file.mtime') && query.includes('where file.name != this.file.name')) {
                     const allFiles = getFiles(path.join(process.cwd(), "content"))
                     const recentFiles = allFiles
@@ -65,24 +66,36 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                             const stat = fs.statSync(f)
                             return {
                                 name: path.basename(f, ".md"),
-                                path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", ""),
                                 mtime: stat.mtime
                             }
                         })
-                        .filter(f => f.name !== "index" && !f.path.includes(".obsidian"))
+                        .filter(f => f.name !== "index" && !f.name.includes(".obsidian"))
                         .sort((a, b) => b.mtime.getTime() - a.mtime.getTime())
                         .slice(0, 10)
 
-                    tableHtml = `<table class="dataview-table"><thead><tr><th>File</th><th>Last Modified</th></tr></thead><tbody>`
+                    tableHtml = `| File | Last Modified |\n| :--- | :--- |\n`
                     recentFiles.forEach(f => {
-                        tableHtml += `<tr><td><a href="/UKSFTA-Hub/${f.path}">${f.name}</a></td><td>${f.mtime.toLocaleDateString()}</td></tr>`
+                        tableHtml += `| [[${f.name}]] | ${f.mtime.toLocaleDateString()} |\n`
                     })
-                    tableHtml += `</tbody></table>`
+                    useMarkdown = true
                 }
 
                 // 2. PERSONNEL
                 else if (query.includes('from "personnel')) {
-                    // ... (API fetch logic) ...
+                    let personnel: any[] = []
+                    if (apiKey && unitId) {
+                        const apiData = await fetchUnitCommanderData(`units/${unitId}/members`, apiKey) || 
+                                        await fetchUnitCommanderData(`units/${unitId}/roster`, apiKey)
+                        if (apiData && Array.isArray(apiData)) {
+                            personnel = apiData.map(p => ({
+                                full_name: p.name || p.username,
+                                rank: p.rank?.name || "Unknown",
+                                current_unit: p.unit?.name || "Unassigned",
+                                rank_order: p.rank?.order || 99,
+                                fileName: p.name || p.username
+                            }))
+                        }
+                    }
                     if (personnel.length === 0) {
                         const files = getFiles(path.join(process.cwd(), "content", "Personnel", "Roster"))
                         personnel = files.map(f => {
@@ -93,8 +106,7 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                                 current_unit: data['current-unit'] || data.current_unit || "Unassigned",
                                 rank_order: data['rank-order'] || data.rank_order || 99,
                                 status: data.status || "Active",
-                                phase: data.phase || "Active",
-                                path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", "") 
+                                fileName: path.basename(f, ".md")
                             }
                         })
                     }
@@ -104,58 +116,58 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                             .filter(p => p.current_unit && /HQ|Intelligence Cell|Med Det HQ|TFHQ/i.test(p.current_unit))
                             .sort((a, b) => (a.rank_order || 99) - (b.rank_order || 99))
 
-                        tableHtml = `<table class="dataview-table"><thead><tr><th>Rank</th><th>Name</th><th>Unit</th></tr></thead><tbody>`
+                        tableHtml = `| Rank | Name | Unit |\n| :--- | :--- | :--- |\n`
                         staff.forEach(p => {
-                            tableHtml += `<tr><td>${p.rank || "Unknown"}</td><td><a href="/UKSFTA-Hub/${p.path}">${p.full_name}</a></td><td>${p.current_unit}</td></tr>`
+                            tableHtml += `| ${p.rank} | [[${p.fileName}|${p.full_name}]] | ${p.current_unit} |\n`
                         })
-                        tableHtml += `</tbody></table>`
+                        useMarkdown = true
                     }
-                    else if (query.includes('status = "basic training"') || query.includes('status = "jsfaw"') || query.includes('contains(status, "continuation")')) {
-                        // ...
-                        if (filtered.length > 0) {
-                            tableHtml = `<table class="dataview-table"><thead><tr><th>Name</th><th>Unit</th></tr></thead><tbody>`
-                            filtered.forEach(p => {
-                                tableHtml += `<tr><td><a href="/UKSFTA-Hub/${p.path}">${p.full_name}</a></td><td>${p.current_unit}</td></tr>`
-                            })
-                            tableHtml += `</tbody></table>`
-                        }
+                    else if (query.includes('status = "basic training"') || query.includes('status = "jsfaw"') || query.includes('continuation')) {
+                        let filtered = []
+                        if (query.includes('basic training')) filtered = personnel.filter(p => p.status === "Basic Training")
+                        else if (query.includes('jsfaw')) filtered = personnel.filter(p => p.status === "JSFAW")
+                        else if (query.includes('continuation')) filtered = personnel.filter(p => p.status?.includes("Continuation"))
+
+                        tableHtml = `| Name | Unit |\n| :--- | :--- |\n`
+                        filtered.forEach(p => {
+                            tableHtml += `| [[${p.fileName}|${p.full_name}]] | ${p.current_unit} |\n`
+                        })
+                        useMarkdown = true
                     }
                 }
 
                 // 3. OPERATIONS
                 else if (query.includes('from "operations"')) {
-                    // ...
+                    const files = getFiles(path.join(process.cwd(), "content", "Operations"))
+                    const operations = files.map(f => {
+                        const { data } = matter(cleanMetadata(fs.readFileSync(f, "utf-8")))
+                        return { 
+                            ...data, 
+                            op_name: data['op-name'] || data.op_name || path.basename(f, ".md"),
+                            fileName: path.basename(f, ".md"),
+                            status: data.status || ""
+                        }
+                    })
+
                     if (query.includes('executing') || query.includes('in progress')) {
-                        const active = operations.filter(op => 
-                            (op.type === "CONOP" || op.fileName.startsWith("CONOP")) && 
-                            /Executing|In Progress|Active|Approved|Planning/i.test(op.status || "")
-                        )
-                        if (active.length > 0) {
-                            tableHtml = `<table class="dataview-table"><thead><tr><th>Operation</th><th>Status</th></tr></thead><tbody>`
-                            active.forEach(op => {
-                                tableHtml += `<tr><td><a href="/UKSFTA-Hub/${op.path}">${op.op_name}</a></td><td>${op.status}</td></tr>`
-                            })
-                            tableHtml += `</tbody></table>`
-                        }
+                        const active = operations.filter(op => /Executing|In Progress|Active|Approved|Planning/i.test(op.status))
+                        tableHtml = `| Operation | Status |\n| :--- | :--- |\n`
+                        active.forEach(op => {
+                            tableHtml += `| [[${op.fileName}|${op.op_name}]] | ${op.status} |\n`
+                        })
+                        useMarkdown = true
                     } 
-                    else if (query.includes('type = "aar"') || query.includes('aar')) {
-                        const aars = operations.filter(op => 
-                            op.type === "AAR" || op.fileName.toLowerCase().includes("aar")
-                        ).slice(0, 10)
-                        
-                        if (aars.length > 0) {
-                            tableHtml = `<ul>`
-                            aars.forEach(op => {
-                                tableHtml += `<li><a href="/UKSFTA-Hub/${op.path}">${op.op_name}</a></li>`
-                            })
-                            tableHtml += `</ul>`
-                        }
-                    }
                 }
 
                 if (tableHtml) {
-                    node.type = "html" as any
-                    node.value = `<div class="dataview-emulation">${tableHtml}</div>`
+                    if (useMarkdown) {
+                        // Use raw text for markdown tables to be parsed by GFM transformer later
+                        node.type = "text" as any
+                        node.value = `\n${tableHtml}\n`
+                    } else {
+                        node.type = "html" as any
+                        node.value = `<div class="dataview-emulation">${tableHtml}</div>`
+                    }
                 } else {
                     node.type = "html" as any
                     node.value = `<!-- Unhandled Dataview Query -->`

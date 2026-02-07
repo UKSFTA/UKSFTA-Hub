@@ -6,10 +6,10 @@ This dashboard serves as the central hub for the Special Boat Service (SBS). It 
 
 ## QUICK LINKS
 
-- [**SBS Training Curriculum**](Curriculum/Curriculum.md)
-- [**Assessments & Evaluations**](Assessments/Assessments-Dashboard.md)
-- [**Technical Standards (Maritime)**](Reference/Technical-Standards.md)
-- [**Operational Templates**](Templates/Templates-Dashboard.md)
+- [[Curriculum/Curriculum|**SBS Training Curriculum**]]
+- [[Assessments/Assessments-Dashboard|**Assessments & Evaluations**]]
+- [[Reference/Technical-Standards|**Technical Standards (Maritime)**]]
+- [[Templates/Templates-Dashboard|**Operational Templates**]]
 
 -
 
@@ -17,7 +17,7 @@ This dashboard serves as the central hub for the Special Boat Service (SBS). It 
 
 ### PHASE 1: SELECTION
 Joint selection phase with the SAS, focusing on physical endurance and maritime aptitude.
-- [ ] [Initial Candidate Evaluation (ICE)](Assessments/SBS-ICE.md)
+- [ ] [[Assessments/SBS-ICE|Initial Candidate Evaluation (ICE)]]
 - [ ] Swimmer Canoeist (SC) Aptitude
 - [ ] Navigation & Endurance Phase
 
@@ -47,7 +47,7 @@ WHERE file.name != "Assessments-Dashboard"
 -
 
 ## REFERENCE & DOCTRINE
-- [UK Military Ranks](../../Documentation/UK-Military-Ranks.md)
+- [[../../Documentation/UK-Military-Ranks|UK Military Ranks]]
 - [UKSF Progression](../../Training/UKSF%20Progression.pdf)
 
 -

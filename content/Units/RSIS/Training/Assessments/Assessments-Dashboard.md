@@ -5,13 +5,13 @@ This folder contains the formalized theoretical and practical assessments for RS
 -
 
 ## THEORETICAL ASSESSMENTS
-- [Initial Candidate Evaluation (ICE)](RSIS-ICE.md) - Phase 1 entry test.
-- [ICE Scoring](ICE-Scoring.md) - **INSTRUCTORS ONLY.**
+- [[RSIS-ICE|Initial Candidate Evaluation (ICE)]] - Phase 1 entry test.
+- [[ICE-Scoring|ICE Scoring]] - **INSTRUCTORS ONLY.**
 
 -
 
 ## PRACTICAL ASSESSMENTS
-- [Field Skills Assessment](Field-Assessment.md) - SIGINT, HUMINT, and SSE proficiency.
+- [[Field-Assessment|Field Skills Assessment]] - SIGINT, HUMINT, and SSE proficiency.
 
 -
 
