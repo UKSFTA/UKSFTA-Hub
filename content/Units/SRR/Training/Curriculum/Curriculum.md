@@ -2,7 +2,7 @@
 
 This document outlines the formalized syllabus for the Special Reconnaissance Regiment (SRR) qualification course. Training is delivered in **2-hour modular blocks**.
 
----
+-
 
 ## 1. PHASE 1: SELECTION & APTITUDE
 **Objective:** Evaluation of psychological and physical suitability for Special Reconnaissance operations.
@@ -11,7 +11,7 @@ This document outlines the formalized syllabus for the Special Reconnaissance Re
 2. **Survival & Evasion:** 2-hour high-intensity isolation and evasion exercise (Modular).
 3. **Navigational Assessment:** 2-hour night navigation module over broken terrain.
 
----
+-
 
 ## 2. PHASE 2: CORE TECHNICAL SKILLS
 **Objective:** Technical mastery of the tools and methodologies of the modern SR operator.
@@ -31,7 +31,7 @@ This document outlines the formalized syllabus for the Special Reconnaissance Re
 - **Digital Exploitation:** Marking of objectives and intelligence data on the rugged tablet.
 - **ISR Assets:** Deployment and management of remote sensors (UAV/UGV).
 
----
+-
 
 ## 3. PHASE 3: TACTICAL APPLICATION
 **Objective:** Operational application of core skills in a high-threat, kinetic environment.
@@ -46,7 +46,7 @@ This document outlines the formalized syllabus for the Special Reconnaissance Re
 - **Contact Drills:** Defensive driving and tactical contact drills.
 - **SERE:** Survival, Evasion, Resistance, and Extraction protocols condensed for operational training.
 
----
+-
 
 ## 4. GRADUATION & QUALIFICATION
 Successful completion of all modules authorizes the candidate for SRR qualification and attachment to an operational troop. Modules may be repeated across multiple weeks if proficiency is not achieved within the 2-hour window.

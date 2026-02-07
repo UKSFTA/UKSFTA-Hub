@@ -1,7 +1,7 @@
 <%*
 // 1. Prompt for Personnel Details
-const full_name = await tp.system.prompt("Full Name");
-if (!full_name) return; // Exit if user cancels
+const full-name = await tp.system.prompt("Full Name");
+if (!full-name) return; // Exit if user cancels
 // Function to parse ranks from the content
 function parseRanks(content) {
     const ranks = [];
@@ -23,10 +23,10 @@ function parseRanks(content) {
 }
 
 // Read the UK Military Ranks note
-const ranks_note_path = "Documentation/UK-Military-Ranks.md";
-const ranks_note_file = this.app.vault.getAbstractFileByPath(ranks_note_path);
-const ranks_content = await this.app.vault.read(ranks_note_file);
-const availableRanks = parseRanks(ranks_content);
+const ranks-note-path = "Documentation/UK-Military-Ranks.md";
+const ranks-note-file = this.app.vault.getAbstractFileByPath(ranks-note-path);
+const ranks-content = await this.app.vault.read(ranks-note-file);
+const availableRanks = parseRanks(ranks-content);
 
 // Prompt for Rank with suggester
 const rank = await tp.system.suggester(availableRanks, availableRanks, false, "Select Rank");
@@ -41,28 +41,28 @@ const rankOrderMap = {
     "Commander": 7, "Flight Lieutenant": 9, "Flying Officer": 10
 };
 
-const rank_order = rankOrderMap[rank] || 99; // Default to 99 if rank not found
+const rank-order = rankOrderMap[rank] || 99; // Default to 99 if rank not found
 
 // 2. Define File Name and Path
-const file_name = `${full_name.split(" ").join("_")}.md`;
-const file_path = `Personnel/Candidates/${file_name}`;
+const file-name = `${full-name.split(" ").join("-")}.md`;
+const file-path = `Personnel/Candidates/${file-name}`;
 
 // 3. Get the content from the original personnel template
-const template_path = "Templates/Personnel-Template.md";
-const template_file = this.app.vault.getAbstractFileByPath(template_path);
-const template_content = await this.app.vault.read(template_file);
+const template-path = "Templates/Personnel-Template.md";
+const template-file = this.app.vault.getAbstractFileByPath(template-path);
+const template-content = await this.app.vault.read(template-file);
 
 // 4. Replace placeholders
-const new_content = template_content
-    .replace('full_name: ""', `full_name: "${full_name}"`)
-    .replace('rank: ""', `rank: "${rank}"\nrank_order: ${rank_order}`)
-    .replace('# {{full_name}}', `# ${full_name}`)
+const new-content = template-content
+    .replace('full-name: ""', `full-name: "${full-name}"`)
+    .replace('rank: ""', `rank: "${rank}"\nrank-order: ${rank-order}`)
+    .replace('# {{full-name}}', `# ${full-name}`)
     .replace(/- \*\*Rank:\*\* \{\{rank\}\}/, `- **Rank:** ${rank}`)
-    .replace('date_joined: {{date}}', `date_joined: ${tp.date.now("YYYY-MM-DD")}`);
+    .replace('date-joined: {{date}}', `date-joined: ${tp.date.now("YYYY-MM-DD")}`);
 
 // 5. Create and open the new file
-const new_file = await this.app.vault.create(file_path, new_content);
-this.app.workspace.activeLeaf.openFile(new_file);
+const new-file = await this.app.vault.create(file-path, new-content);
+this.app.workspace.activeLeaf.openFile(new-file);
 
 return "";
-_%>
+-%>

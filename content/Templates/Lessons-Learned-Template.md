@@ -1,12 +1,12 @@
 type: "Lesson Learned"
-op_name: ""
-op_num: ""
+op-name: ""
+op-num: ""
 date: <% tp.date.now("YYYY-MM-DD") %>
 category: ""
 severity: ""
 status: "Open"
-tags: [lessons_learned]
----
+tags: [lessons-learned]
+-
 
 # Lesson Learned: <% tp.file.cursor(1) %>
 
@@ -38,4 +38,4 @@ tags: [lessons_learned]
 -   **Responsible Party:** <% tp.file.cursor(11) %>
 -   **Target Date for Implementation:** <% tp.file.cursor(12) %>
 
----
+-

@@ -2,13 +2,13 @@
 
 This dashboard provides the command-level overview of all active, planned, and historic operations for the Task Force.
 
----
+-
 
 ```dataviewjs
 // Dynamic Mission Status Board
 let operations = dv.pages('"Operations"')
     .where(p => p.file.name.startsWith("Op-")) // Filter for operation folders/notes (CONOPs)
-    .sort(p => p.op_num, "desc");
+    .sort(p => p.op-num, "desc");
 
 // Define custom statuses to make it easier to group
 const getMissionPhase = (status) => {
@@ -47,7 +47,7 @@ dv.table(
 );
 ```
 
----
+-
 
 ## ACTIVE OPERATIONS
 *Ongoing operational deployments.*
@@ -58,28 +58,28 @@ FROM "Operations"
 WHERE status = "Executing" OR status = "In Progress"
 ```
 
----
+-
 
 ## MISSION PLANNING (CONOPs)
 *All Concept of Operations documents, sorted by approval status.*
 
 ### APPROVED / READY
 ```dataview
-TABLE op_name AS "Operation Name", op_num AS "Op No.", status AS "Status"
+TABLE op-name AS "Operation Name", op-num AS "Op No.", status AS "Status"
 FROM "Operations"
 WHERE type = "CONOP" AND (status = "Approved" OR status = "Planning")
-SORT op_num ASC
+SORT op-num ASC
 ```
 
 ### DRAFT / IN-DEVELOPMENT
 ```dataview
-TABLE op_name AS "Operation Name", op_num AS "Op No.", status AS "Status"
+TABLE op-name AS "Operation Name", op-num AS "Op No.", status AS "Status"
 FROM "Operations"
 WHERE type = "CONOP" AND status = "Draft"
-SORT op_num ASC
+SORT op-num ASC
 ```
 
----
+-
 
 ## AFTER ACTION REPORTS (AARs)
 *Standardized post-operational analysis.*
@@ -92,7 +92,7 @@ SORT file.mtime DESC
 LIMIT 10
 ```
 
----
+-
 > [!NOTE] Documentation
 > For detailed instructions on the operational cycle, refer to the [[Documentation/Operations-Dashboard-Guide|Operations-Dashboard-Guide]].
 

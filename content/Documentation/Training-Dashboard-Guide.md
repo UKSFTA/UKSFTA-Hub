@@ -2,7 +2,7 @@
 
 This guide defines the protocols for utilizing the Training Dashboard and associated personnel files for candidate tracking.
 
----
+-
 
 ## OPERATIONAL USAGE
 
@@ -16,7 +16,7 @@ This guide defines the protocols for utilizing the Training Dashboard and associ
     *   Updates to the `status` or `phase` fields in the metadata will automatically synchronize with the unit-specific dashboards.
     *   Training is conducted in **2-hour modular blocks**. Ensure all session notes are recorded in the candidate's dossier.
 
----
+-
 
 ## PROGRESSION STATUSES
 
@@ -28,5 +28,5 @@ The following metadata values are standardized for Task Force tracking:
 - `Specialist Training` (Post-Selection)
 - `Active` (Operational Attachment)
 
----
+-
 **"Everywhere, Unseen"**

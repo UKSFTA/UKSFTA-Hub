@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "J. Smith"
-rank: "Private"
-rank_order: 19
-call_sign: "N/A"
+full-name: "C. Quack"
+rank: "Recruit"
+rank-order: 20
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SFSG Training Plt"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SFSG Training Plt"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Private J. Smith
+# Recruit C. Quack
 
 ## Service Record
-- **Rank:** Private
+- **Rank:** Recruit
 - **Call Sign:** N/A
 - **Current Unit:** SFSG Training Plt
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

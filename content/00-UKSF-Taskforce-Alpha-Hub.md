@@ -3,7 +3,7 @@
 > [!quote] Message of the Day
 > *Welcome to the UKSF Taskforce Alpha vault. All systems are operational. Operations conducted weekly.*
 
----
+-
 
 ## Mission Control
 *Central dashboards for managing all aspects of the Task Force.*
@@ -14,7 +14,7 @@
 -   **[[Lessons-Learned/Lessons-Learned-Dashboard|Lessons-Learned-Dashboard]]**: Document and analyze insights from operations.
 -   **[[Intel-Dashboard|Intel-Dashboard]]**: Centralized overview of all intelligence.
 
----
+-
 
 ## Key Command Staff
 *Overview of key leadership personnel.*
@@ -22,30 +22,30 @@
 ```dataview
 TABLE
     rank,
-    full_name,
-    current_unit,
-    rank_order
+    full-name,
+    current-unit,
+    rank-order
 FROM "Personnel/Roster"
-WHERE contains(current_unit, "HQ") OR current_unit = "Intelligence Cell" OR current_unit = "Med Det HQ"
-SORT rank_order ASC
+WHERE contains(current-unit, "HQ") OR current-unit = "Intelligence Cell" OR current-unit = "Med Det HQ"
+SORT rank-order ASC
 ```
 
----
+-
 
 ## Ongoing Operations Summary
 *A summary of all currently active operations.*
 
 ```dataview
 TABLE
-    op_name AS "Operation Name",
+    op-name AS "Operation Name",
     status AS "Status",
-    (end_date - date("now")).days AS "Days Remaining"
+    (end-date - date("now")).days AS "Days Remaining"
 FROM "Operations"
 WHERE type = "CONOP" AND (status = "Executing" OR status = "In Progress")
-SORT (end_date - date("now")).days ASC
+SORT (end-date - date("now")).days ASC
 ```
 
----
+-
 
 ## Resources & Documentation
 
@@ -53,7 +53,7 @@ SORT (end_date - date("now")).days ASC
 -   **[[Documentation/Operations-Dashboard-Guide|Documentation]]**: Guides and documentation for using this system.
 -   **[[Templates/AAR-Template|Templates]]**: All available templates.
 
----
+-
 
 ## Recent Activity
 *This section can be customized with Dataview queries to show recent changes.*

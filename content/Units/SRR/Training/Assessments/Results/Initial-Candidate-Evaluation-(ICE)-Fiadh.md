@@ -4,7 +4,7 @@ This document outlines the theoretical assessment for candidates seeking attachm
 
 Candidates are required to provide detailed, logic-based responses to the following operational scenarios:
 
----
+-
 ### SECTION 1: CLOSE TARGET RECONNAISSANCE (CTR)
 
 1. You are within 50m of a target with active thermal patrols. What specific light and noise discipline measures are you taking to prevent detection?
@@ -57,7 +57,7 @@ Candidates are required to provide detailed, logic-based responses to the follow
 
 11A. I don't know the mechanics of electronic signatures within Arma 3, I'll have to get taught it. But if I'd have to guess, phone would have to be fully off and rugged tablet the same and should only be turned on when absolutely needed
 
----
+-
 
 Signed,
 SSgt. M. Barker [MC]

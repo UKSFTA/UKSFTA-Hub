@@ -1,13 +1,13 @@
 type: "Intel Brief"
-op_name: ""
-op_num: ""
----
+op-name: ""
+op-num: ""
+-
 # Intel Brief: [Operation Name]
 **Reference:** [[CONOP]]
 **Date/Time:** <% tp.date.now("YYYY-MM-DD HH:mm") %>
 **Author:** {{author}}
 
----
+-
 
 ## 1. Threat Assessment
 - **Overall Threat Level:** (Low/Medium/High/Severe)
@@ -34,7 +34,7 @@ op_num: ""
 - **Asset-1:** (e.g., "UAV surveillance of Objective RED")
 - **Asset-2:** (e.g., "HUMINT source in local village")
 
----
+-
 ## Annex
 - [[Map-of-AO]]
 - [[Link-to-satellite-imagery]]

@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "C. Agnew"
-rank: "Second Lieutenant"
-rank_order: 11
-call_sign: "N/A"
+full-name: "J. Shaw"
+rank: "Commander"
+rank-order: 7
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "Intelligence Cell"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "Intelligence Cell"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Second Lieutenant C. Agnew
+# Commander J. Shaw
 
 ## Service Record
-- **Rank:** Second Lieutenant
+- **Rank:** Commander
 - **Call Sign:** N/A
 - **Current Unit:** Intelligence Cell
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

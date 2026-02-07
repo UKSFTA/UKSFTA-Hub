@@ -2,7 +2,7 @@ To compress a 24-hour assessment into a **Modular 4-Hour Evaluation** (split int
 
 Here is the revised directive.
 
----
+-
 
 ### **SESSION 1: INFILTRATION & INTELLIGENCE (2 HOURS)**
 
@@ -28,7 +28,7 @@ Here is the revised directive.
 - **Critical Fail:** Missing 2 or more primary PIRs or "Lens Glint" detection.
     
 
----
+-
 
 ### **SESSION 2: OVERWATCH & EXFILTRATION (2 HOURS)**
 
@@ -54,7 +54,7 @@ Here is the revised directive.
 - **Critical Fail:** Capture by tracker team or failure to adhere to the PACE plan navigation route.
     
 
----
+-
 
 ### **SAFETY & CONDUCT**
 
@@ -65,7 +65,7 @@ Here is the revised directive.
 3. **EQUIPMENT:** Full specialist loadout is required for both sessions. No "slick" runs.
     
 
----
+-
 
 **Signed,** 
 **SSgt. M. Barker [MC]** 
@@ -73,7 +73,7 @@ Here is the revised directive.
 
 Special Reconnaissance Regiment
 
----
+-
 
 ### **Section Leader's Coaching Note:**
 

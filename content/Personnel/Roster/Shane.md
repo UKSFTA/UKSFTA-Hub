@@ -1,14 +1,14 @@
 type: "Personnel"
-full_name: "Shane"
+full-name: "Shane"
 rank: "Lance Corporal"
-rank_order: 18
-call_sign: "N/A"
+rank-order: 18
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SAS Troop HQ"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SAS Troop HQ"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
 # Lance Corporal Shane
 
@@ -18,7 +18,7 @@ tags: [personnel, active]
 - **Current Unit:** SAS Troop HQ
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

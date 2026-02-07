@@ -4,7 +4,7 @@
 
 This notice outlines the structural organization of the Intelligence & Exploitation Cell (TIE) supporting UKSF elements. The TIE cell is responsible for the full-spectrum intelligence cycle: Direction, Collection, Processing, and Dissemination.
 
----
+-
 
 **Cell Assignments**
 
@@ -39,7 +39,7 @@ This notice outlines the structural organization of the Intelligence & Exploitat
     - Secondary: [Name]
         
 
----
+-
 
 **Role Definitions and Primary Duties**
 
@@ -54,7 +54,7 @@ This notice outlines the structural organization of the Intelligence & Exploitat
 - **All-Source Analyst / G2 Liaison:** The "Fusion" point. They take the raw drone feeds (IMINT), the radio intercepts (SIGINT), and the scout reports (SRR) to build the Common Operating Picture (COP). They maintain the "Enemy Situation Map" (SITMAP) in real-time.
     
 
----
+-
 
 **Signed,**
 

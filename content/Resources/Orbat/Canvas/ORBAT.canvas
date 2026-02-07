@@ -3,7 +3,7 @@
 		{
 			"id":"tfhq",
 			"type":"text",
-			"text":"# TFHQ\n0-\n---\n**[[Buh_Ross|Maj. Ross Buh]]**\n[[Hodge_N|WO2 N. Hodge]]",
+			"text":"# TFHQ\n0-\n---\n**[[Buh-Ross|Maj. Ross Buh]]**\n[[Hodge-N|WO2 N. Hodge]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -15,7 +15,7 @@
 			"height":230
 		},
 		{
-			"id":"uksf_hq",
+			"id":"uksf-hq",
 			"type":"text",
 			"text":"### UKSF\n\nEmpty",
 			"styleAttributes":{
@@ -29,7 +29,7 @@
 			"height":200
 		},
 		{
-			"id":"rac_hq",
+			"id":"rac-hq",
 			"type":"text",
 			"text":"### 1 Troop RAC\n*Panzer 14*\n---\nEmpty",
 			"styleAttributes":{
@@ -43,9 +43,9 @@
 			"height":200
 		},
 		{
-			"id":"med_hq",
+			"id":"med-hq",
 			"type":"text",
-			"text":"### Med Det HQ\n*Bulldog 15*\n---\n[[Hjelm_L|LCpl L. Hjelm]]",
+			"text":"### Med Det HQ\n*Bulldog 15*\n---\n[[Hjelm-L|LCpl L. Hjelm]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -57,9 +57,9 @@
 			"height":200
 		},
 		{
-			"id":"jsfaw_hq",
+			"id":"jsfaw-hq",
 			"type":"text",
-			"text":"### JSFAW HQ\n*Guardian 2-0*\n---\n[[Muller_M|Flt Lt. M. Müller]]",
+			"text":"### JSFAW HQ\n*Guardian 2-0*\n---\n[[Muller-M|Flt Lt. M. Müller]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -71,7 +71,7 @@
 			"height":200
 		},
 		{
-			"id":"sfsg_hq",
+			"id":"sfsg-hq",
 			"type":"text",
 			"text":"### SFSG Training Plt HQ\n*Bulldog 10*\n---\nEmpty",
 			"styleAttributes":{
@@ -87,7 +87,7 @@
 		{
 			"id":"intel",
 			"type":"text",
-			"text":"### Intelligence Cell\n\n**[[Shaw_J|Cmdr. J. Shaw]]**\n[[Agnew_C|2Lt. C. Agnew]]",
+			"text":"### Intelligence Cell\n\n**[[Shaw-J|Cmdr. J. Shaw]]**\n[[Agnew-C|2Lt. C. Agnew]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -169,7 +169,7 @@
 			"height":201
 		},
 		{
-			"id":"sas_hq",
+			"id":"sas-hq",
 			"type":"text",
 			"text":"### SAS Troop HQ\n*Sabre 3-0*\n---\n[[Arbo|Cpl Arbo]]\n[[Shane|LCpl Shane]]",
 			"styleAttributes":{
@@ -183,7 +183,7 @@
 			"height":210
 		},
 		{
-			"id":"sbs_hq",
+			"id":"sbs-hq",
 			"type":"text",
 			"text":"### SBS Troop HQ\n*Trident 4-0*\n---\n[[Wolf|Cpl Wolf]]",
 			"styleAttributes":{
@@ -197,9 +197,9 @@
 			"height":210
 		},
 		{
-			"id":"srr_hq",
+			"id":"srr-hq",
 			"type":"text",
-			"text":"### SRR Troop HQ\n*Raven 5-0*\n---\n[[Barker_M|Sgt M. Barker [MC.]]]",
+			"text":"### SRR Troop HQ\n*Raven 5-0*\n---\n[[Barker-M|Sgt M. Barker [MC.]]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -241,7 +241,7 @@
 			"height":270
 		},
 		{
-			"id":"jsfaw_fw",
+			"id":"jsfaw-fw",
 			"type":"text",
 			"text":"### JSFAW Fixed Wing\n*21*\n---\n[[Hans|FgOff Hans]]",
 			"styleAttributes":{
@@ -255,7 +255,7 @@
 			"height":210
 		},
 		{
-			"id":"jsfaw_rot",
+			"id":"jsfaw-rot",
 			"type":"text",
 			"text":"### JSFAW Rotary\n*22*\n---\n[[Hans|FgOff Hans]]",
 			"styleAttributes":{
@@ -269,9 +269,9 @@
 			"height":210
 		},
 		{
-			"id":"sas_a",
+			"id":"sas-a",
 			"type":"text",
-			"text":"### SAS Team Alpha\n*Sabre 3-1*\n---\n[[Coburn|Tpr Coburn]]\n[[Lewis_S|Tpr S. Lewis]]\n[[Sophie|Tpr Sophie]]\n[[Aidan|Tpr Aidan]]\n[[Splinter|Tpr Splinter]]\n[[Omega|Tpr Omega]]\n[[Arbo|Cpl Arbo]]\n[[Shane|LCpl Shane]]",
+			"text":"### SAS Team Alpha\n*Sabre 3-1*\n---\n[[Coburn|Tpr Coburn]]\n[[Lewis-S|Tpr S. Lewis]]\n[[Sophie|Tpr Sophie]]\n[[Aidan|Tpr Aidan]]\n[[Splinter|Tpr Splinter]]\n[[Omega|Tpr Omega]]\n[[Arbo|Cpl Arbo]]\n[[Shane|LCpl Shane]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -283,9 +283,9 @@
 			"height":400
 		},
 		{
-			"id":"sbs_a",
+			"id":"sbs-a",
 			"type":"text",
-			"text":"### SBS Team Alpha\n*Trident 4-1*\n---\n[[Brett|Tpr Brett]]\n[[Roach|Tpr Roach]]\n[[Amy|Tpr Amy]]\n[[Wolf|Cpl Wolf]]\n[[Hjelm_L|LCpl L. Hjelm]]",
+			"text":"### SBS Team Alpha\n*Trident 4-1*\n---\n[[Brett|Tpr Brett]]\n[[Roach|Tpr Roach]]\n[[Amy|Tpr Amy]]\n[[Wolf|Cpl Wolf]]\n[[Hjelm-L|LCpl L. Hjelm]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -297,9 +297,9 @@
 			"height":400
 		},
 		{
-			"id":"srr_a",
+			"id":"srr-a",
 			"type":"text",
-			"text":"### SRR Team Alpha\n*Raven 5-1*\n---\n[[Parkie|Tpr Parkie]]\n[[Brooks|Tpr Brooks]]\n[[Smout_J|Tpr J. Smout]]\n[[Derry|Tpr Derry]]\n[[Barker_M|Sgt M. Barker [MC.]]]",
+			"text":"### SRR Team Alpha\n*Raven 5-1*\n---\n[[Parkie|Tpr Parkie]]\n[[Brooks|Tpr Brooks]]\n[[Smout-J|Tpr J. Smout]]\n[[Derry|Tpr Derry]]\n[[Barker-M|Sgt M. Barker [MC.]]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -311,7 +311,7 @@
 			"height":400
 		},
 		{
-			"id":"sas_b",
+			"id":"sas-b",
 			"type":"text",
 			"text":"### SAS Team Bravo\n*Sabre 3-2*\n---\nEmpty",
 			"styleAttributes":{
@@ -325,7 +325,7 @@
 			"height":180
 		},
 		{
-			"id":"sbs_b",
+			"id":"sbs-b",
 			"type":"text",
 			"text":"### SBS Team Bravo\n*Trident 4-2*\n---\nEmpty",
 			"styleAttributes":{
@@ -339,7 +339,7 @@
 			"height":180
 		},
 		{
-			"id":"srr_b",
+			"id":"srr-b",
 			"type":"text",
 			"text":"### SRR Team Bravo\n*Raven 5-2*\n---\nEmpty",
 			"styleAttributes":{
@@ -353,7 +353,7 @@
 			"height":180
 		},
 		{
-			"id":"sas_c",
+			"id":"sas-c",
 			"type":"text",
 			"text":"### SAS Team Charlie\n*Sabre 3-3*\n---\nEmpty",
 			"styleAttributes":{
@@ -367,7 +367,7 @@
 			"height":180
 		},
 		{
-			"id":"sbs_c",
+			"id":"sbs-c",
 			"type":"text",
 			"text":"### SBS Team Charlie\n*Trident 4-3*\n---\nEmpty",
 			"styleAttributes":{
@@ -381,7 +381,7 @@
 			"height":180
 		},
 		{
-			"id":"srr_c",
+			"id":"srr-c",
 			"type":"text",
 			"text":"### SRR Team Charlie\n*Raven 5-3*\n---\nEmpty",
 			"styleAttributes":{
@@ -395,9 +395,9 @@
 			"height":180
 		},
 		{
-			"id":"sfsg_plt",
+			"id":"sfsg-plt",
 			"type":"text",
-			"text":"### SFSG Training Plt\n*Bulldog 10*\n---\n[[Mirai|Tpr Mirai]]\n[[Toni|Tpr Toni]]\n[[Nyuu_exe|Pte Nyuu.exe]]\n[[Smith_J|Pte J. Smith]]\n[[Mockett_G|Pte G. Mockett]]\n[[Quack_C|Rct C. Quack]]\n[[Holding_R|Rct R. Holding]]\n[[Odin|Rct Odin]]\n[[cassius2|Rct cassius2]]\n[[notkongou|Rct notkongou]]",
+			"text":"### SFSG Training Plt\n*Bulldog 10*\n---\n[[Mirai|Tpr Mirai]]\n[[Toni|Tpr Toni]]\n[[Nyuu-exe|Pte Nyuu.exe]]\n[[Smith-J|Pte J. Smith]]\n[[Mockett-G|Pte G. Mockett]]\n[[Quack-C|Rct C. Quack]]\n[[Holding-R|Rct R. Holding]]\n[[Odin|Rct Odin]]\n[[cassius2|Rct cassius2]]\n[[notkongou|Rct notkongou]]",
 			"styleAttributes":{
 				"textAlign":"center",
 				"border":"invisible",
@@ -409,7 +409,7 @@
 			"height":433
 		},
 		{
-			"id":"med_det",
+			"id":"med-det",
 			"type":"text",
 			"text":"### Medical Det\n*Bulldog 15*\n---\nTpr Coburn\nTpr Parkie\nTpr Sophie\nTpr Omega\nLCpl L. Hjelm",
 			"styleAttributes":{
@@ -425,33 +425,33 @@
 	],
 	"edges":[
 		{"id":"e1","fromNode":"tfhq","fromSide":"bottom","toNode":"intel","toSide":"top"},
-		{"id":"e2","fromNode":"tfhq","fromSide":"bottom","toNode":"sfsg_hq","toSide":"top"},
-		{"id":"e4","fromNode":"tfhq","fromSide":"bottom","toNode":"jsfaw_hq","toSide":"top"},
-		{"id":"e7","fromNode":"tfhq","fromSide":"bottom","toNode":"med_hq","toSide":"top"},
-		{"id":"e9","fromNode":"tfhq","fromSide":"bottom","toNode":"uksf_hq","toSide":"top"},
-		{"id":"e22","fromNode":"tfhq","fromSide":"bottom","toNode":"rac_hq","toSide":"top"},
-		{"id":"e3","fromNode":"sfsg_hq","fromSide":"bottom","toNode":"sfsg_plt","toSide":"top"},
-		{"id":"e5","fromNode":"jsfaw_hq","fromSide":"bottom","toNode":"jsfaw_fw","toSide":"top"},
-		{"id":"e8","toFloating":false,"fromNode":"med_hq","fromSide":"bottom","toNode":"med_det","toSide":"top"},
-		{"id":"e10","fromNode":"uksf_hq","fromSide":"bottom","toNode":"sas_hq","toSide":"top"},
-		{"id":"e11","fromNode":"sas_hq","fromSide":"bottom","toNode":"sas_a","toSide":"top"},
-		{"id":"e12","fromNode":"sas_a","fromSide":"bottom","toNode":"sas_b","toSide":"top"},
-		{"id":"e13","fromNode":"sas_b","fromSide":"bottom","toNode":"sas_c","toSide":"top"},
-		{"id":"e14","fromNode":"uksf_hq","fromSide":"bottom","toNode":"sbs_hq","toSide":"top"},
-		{"id":"e15","fromNode":"sbs_hq","fromSide":"bottom","toNode":"sbs_a","toSide":"top"},
-		{"id":"e16","fromNode":"sbs_a","fromSide":"bottom","toNode":"sbs_b","toSide":"top"},
-		{"id":"e17","fromNode":"sbs_b","fromSide":"bottom","toNode":"sbs_c","toSide":"top"},
-		{"id":"e18","fromNode":"uksf_hq","fromSide":"bottom","toNode":"srr_hq","toSide":"top"},
-		{"id":"e19","fromNode":"srr_hq","fromSide":"bottom","toNode":"srr_a","toSide":"top"},
-		{"id":"e20","fromNode":"srr_a","fromSide":"bottom","toNode":"srr_b","toSide":"top"},
-		{"id":"e21","fromNode":"srr_b","fromSide":"bottom","toNode":"srr_c","toSide":"top"},
+		{"id":"e2","fromNode":"tfhq","fromSide":"bottom","toNode":"sfsg-hq","toSide":"top"},
+		{"id":"e4","fromNode":"tfhq","fromSide":"bottom","toNode":"jsfaw-hq","toSide":"top"},
+		{"id":"e7","fromNode":"tfhq","fromSide":"bottom","toNode":"med-hq","toSide":"top"},
+		{"id":"e9","fromNode":"tfhq","fromSide":"bottom","toNode":"uksf-hq","toSide":"top"},
+		{"id":"e22","fromNode":"tfhq","fromSide":"bottom","toNode":"rac-hq","toSide":"top"},
+		{"id":"e3","fromNode":"sfsg-hq","fromSide":"bottom","toNode":"sfsg-plt","toSide":"top"},
+		{"id":"e5","fromNode":"jsfaw-hq","fromSide":"bottom","toNode":"jsfaw-fw","toSide":"top"},
+		{"id":"e8","toFloating":false,"fromNode":"med-hq","fromSide":"bottom","toNode":"med-det","toSide":"top"},
+		{"id":"e10","fromNode":"uksf-hq","fromSide":"bottom","toNode":"sas-hq","toSide":"top"},
+		{"id":"e11","fromNode":"sas-hq","fromSide":"bottom","toNode":"sas-a","toSide":"top"},
+		{"id":"e12","fromNode":"sas-a","fromSide":"bottom","toNode":"sas-b","toSide":"top"},
+		{"id":"e13","fromNode":"sas-b","fromSide":"bottom","toNode":"sas-c","toSide":"top"},
+		{"id":"e14","fromNode":"uksf-hq","fromSide":"bottom","toNode":"sbs-hq","toSide":"top"},
+		{"id":"e15","fromNode":"sbs-hq","fromSide":"bottom","toNode":"sbs-a","toSide":"top"},
+		{"id":"e16","fromNode":"sbs-a","fromSide":"bottom","toNode":"sbs-b","toSide":"top"},
+		{"id":"e17","fromNode":"sbs-b","fromSide":"bottom","toNode":"sbs-c","toSide":"top"},
+		{"id":"e18","fromNode":"uksf-hq","fromSide":"bottom","toNode":"srr-hq","toSide":"top"},
+		{"id":"e19","fromNode":"srr-hq","fromSide":"bottom","toNode":"srr-a","toSide":"top"},
+		{"id":"e20","fromNode":"srr-a","fromSide":"bottom","toNode":"srr-b","toSide":"top"},
+		{"id":"e21","fromNode":"srr-b","fromSide":"bottom","toNode":"srr-c","toSide":"top"},
 		{
 			"id":"6ec9ff48b477456d",
 			"styleAttributes":{},
 			"toFloating":false,
-			"fromNode":"jsfaw_hq",
+			"fromNode":"jsfaw-hq",
 			"fromSide":"bottom",
-			"toNode":"jsfaw_rot",
+			"toNode":"jsfaw-rot",
 			"toSide":"top"
 		}
 	],

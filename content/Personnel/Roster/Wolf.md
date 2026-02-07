@@ -1,14 +1,14 @@
 type: "Personnel"
-full_name: "Wolf"
+full-name: "Wolf"
 rank: "Corporal"
-rank_order: 17
-call_sign: "N/A"
+rank-order: 17
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SBS Troop HQ"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SBS Troop HQ"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
 # Corporal Wolf
 
@@ -18,7 +18,7 @@ tags: [personnel, active]
 - **Current Unit:** SBS Troop HQ
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

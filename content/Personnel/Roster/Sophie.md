@@ -1,14 +1,14 @@
 type: "Personnel"
-full_name: "Sophie"
+full-name: "Sophie"
 rank: "Trooper"
-rank_order: 19
-call_sign: "N/A"
+rank-order: 19
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "Medical Detachment"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "Medical Detachment"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
 # Trooper Sophie
 
@@ -18,7 +18,7 @@ tags: [personnel, active]
 - **Current Unit:** Medical Detachment
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

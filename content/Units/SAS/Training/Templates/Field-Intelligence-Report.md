@@ -4,27 +4,27 @@
 **REPORT TYPE:** Patrol Reccenaissance
 **CLASSIFICATION:** RESTRICTED / NATO CONFIDENTIAL
 
----
+-
 
 ### 1. MISSION DATA
-*   **CALLSIGN:** __________________
-*   **OP LOCATION (GRID):** __________________
-*   **PRIMARY OBJECTIVE:** __________________
+*   **CALLSIGN:** ------------------
+*   **OP LOCATION (GRID):** ------------------
+*   **PRIMARY OBJECTIVE:** ------------------
 
----
+-
 
 ### 2. CONTACT LOG (B-D-R-T)
 | TIME (Z) | BEARING | DISTANCE | REF POINT | ACTIVITY / TARGET |
-| :--- | :--- | :--- | :--- | :--- |
+| :- | :- | :- | :- | :- |
 | | | | | |
 
----
+-
 
 ### 3. PIR STATUS
-*   **PIR 1 [HOSTILE COMP]:** ___________________________________________________________
-*   **PIR 2 [KEY TERRAIN]:** ___________________________________________________________
-*   **PIR 3 [LOGISTICS]:** _____________________________________________________________
+*   **PIR 1 [HOSTILE COMP]:** -----------------------------------------------------------
+*   **PIR 2 [KEY TERRAIN]:** -----------------------------------------------------------
+*   **PIR 3 [LOGISTICS]:** -------------------------------------------------------------
 
----
+-
 
-**SIGNED:** ________________________ (Callsign)
+**SIGNED:** ------------------------ (Callsign)

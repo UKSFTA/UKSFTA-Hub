@@ -4,12 +4,12 @@
 **MODULE:** Phase 1 - Intelligence Doctrine & Technical Aptitude
 **VERSION:** 2026.1
 
----
+-
 
 ### **INSTRUCTIONS**
 *Answer all questions. Focus on the "So What?" factor: finding the intel is step one; explaining its impact on the mission is step two.*
 
----
+-
 
 ### **SECTION 1: SIGNALS INTELLIGENCE (SIGINT)**
 
@@ -23,7 +23,7 @@ You intercept a brief transmission: *"Package is moving. ETA Green-House in 5 mi
 *   Break down this intercept into: Who, What, Where, When.
 *   What is your immediate advice to the Ground Commander?
 
----
+-
 
 ### **SECTION 2: HUMAN INTELLIGENCE (HUMINT)**
 
@@ -37,7 +37,7 @@ A local civilian offers you the location of a weapons cache but demands anonymit
 *   How do you conduct the meet in a public market without compromising them?
 *   What "Pocket Litter" or evidence do you look for to verify their reliability?
 
----
+-
 
 ### **SECTION 3: SENSITIVE SITE EXPLOITATION (SSE)**
 
@@ -54,7 +54,7 @@ You recover a hard drive.
 *   How do you store it to prevent damage or evidence tampering (Roleplay/ACE Inventory)?
 *   Why is it critical to tag this item with the Grid Reference and Time Found?
 
----
+-
 
 ### **SECTION 4: OPERATIONAL LOGIC**
 
@@ -64,7 +64,7 @@ You find a receipt for 500kg of Ammonium Nitrate fertilizer in a civilian house.
 *   **Assessment:** What does this mean?
 *   **Recommendation:** What should the SF team do *right now*?
 
----
+-
 
-**CANDIDATE SIGNATURE:** ________________________
-**DATE:** ________________________
+**CANDIDATE SIGNATURE:** ------------------------
+**DATE:** ------------------------

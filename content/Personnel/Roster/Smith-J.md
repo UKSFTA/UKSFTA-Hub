@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "J. Shaw"
-rank: "Commander"
-rank_order: 7
-call_sign: "N/A"
+full-name: "J. Smith"
+rank: "Private"
+rank-order: 19
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "Intelligence Cell"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SFSG Training Plt"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Commander J. Shaw
+# Private J. Smith
 
 ## Service Record
-- **Rank:** Commander
+- **Rank:** Private
 - **Call Sign:** N/A
-- **Current Unit:** Intelligence Cell
+- **Current Unit:** SFSG Training Plt
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

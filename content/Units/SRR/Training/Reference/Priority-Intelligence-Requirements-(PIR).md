@@ -8,7 +8,7 @@
 
 **SUBJECT:** Session 1: Priority Intelligence Requirements (PIR)
 
----
+-
 
 #### **1. SITUATION**
 
@@ -43,7 +43,7 @@ Candidates must identify and record the following five data points in their **Wr
     - Identify the primary communication method used by the hostiles (e.g., handheld radios, satellite phone, or runner). Identify the location of any visible antennas or signal-boosting equipment.
         
 
----
+-
 
 #### **4. REPORTING DIRECTIVE**
 
@@ -54,7 +54,7 @@ Candidates must identify and record the following five data points in their **Wr
 - **Signature:** Ensure the report is signed with the candidate's callsign and timestamped upon exfiltration.
     
 
----
+-
 
 **Signed,**
 **SSgt. M. Barker [MC]**
@@ -62,7 +62,7 @@ Candidates must identify and record the following five data points in their **Wr
 
 Special Reconnaissance Regiment
 
----
+-
 
 ### **Instructor Grading Note (OPFOR Instructions):**
 

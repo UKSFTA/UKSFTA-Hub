@@ -2,7 +2,7 @@
 
 This document defines the tradecraft standards and technical protocols for the Royal Secret Intelligence Service (RSIS).
 
----
+-
 
 ## 1. SIGNALS INTELLIGENCE (SIGINT)
 
@@ -16,7 +16,7 @@ This document defines the tradecraft standards and technical protocols for the R
     - **Single Point:** Using signal strength to estimate distance ("Hot/Cold").
     - **Multi Point:** Coordinating with a second TIE element to triangulate an exact grid reference.
 
----
+-
 
 ## 2. HUMAN INTELLIGENCE (HUMINT)
 
@@ -31,7 +31,7 @@ This document defines the tradecraft standards and technical protocols for the R
 - **Sanitization:** Never use real names over the net. Assign a pseudonym (e.g., "Source VIKING").
 - **Verification:** Corroborate all intelligence with a second discipline (SIGINT or IMINT) before operational action.
 
----
+-
 
 ## 3. SENSITIVE SITE EXPLOITATION (SSE)
 
@@ -46,7 +46,7 @@ This document defines the tradecraft standards and technical protocols for the R
 - **Bag & Tag:** Secure items using designated evidence bags.
 - **EM Isolation:** Do not power up captured devices on-target to prevent remote data destruction.
 
----
+-
 
 ## 4. TECHNICAL SURVEILLANCE & DIRECT SUPPORT
 
@@ -56,4 +56,4 @@ This document defines the tradecraft standards and technical protocols for the R
 - **Dynamic Marking:** Utilize cTAB/BFT for real-time marking of HVTs or IEDs. Immediate tactical data takes priority over formal reporting.
 - **UAV Overwatch:** Direct integration with the assault team. Provide micro-level situational awareness: "Patrol Lead, two hostiles in the courtyard, suggest flank right."
 
----
+-

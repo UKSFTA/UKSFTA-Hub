@@ -2,7 +2,7 @@
 
 This dashboard provides a centralized overview of all intelligence collected, processed, and exploited across all operational theatres.
 
----
+-
 
 ## LATEST INTELLIGENCE (LAST 7 DAYS)
 *Recently acquired intelligence reports.*
@@ -10,7 +10,7 @@ This dashboard provides a centralized overview of all intelligence collected, pr
 ```dataview
 TABLE
     file.cday as "Date Added",
-    op_name as "Operation",
+    op-name as "Operation",
     file.link as "File"
 FROM "Operations"
 WHERE (contains(file.path, "Intel") OR contains(file.path, "DOCEX") OR contains(file.path, "SIGINT") OR contains(file.path, "HUMINT")) 
@@ -19,7 +19,7 @@ WHERE (contains(file.path, "Intel") OR contains(file.path, "DOCEX") OR contains(
 SORT file.cday DESC
 ```
 
----
+-
 
 ## INTELLIGENCE BY OPERATION
 *Intelligence grouping by theatre of operations.*
@@ -28,11 +28,11 @@ SORT file.cday DESC
 LIST rows.file.link
 FROM "Operations"
 WHERE contains(file.path, "Intel") OR contains(file.path, "DOCEX") OR contains(file.path, "SIGINT") OR contains(file.path, "HUMINT")
-GROUP BY op_name
-SORT op_name ASC
+GROUP BY op-name
+SORT op-name ASC
 ```
 
----
+-
 
 ## PERSONS OF INTEREST (POI)
 *Individual profiles and network mapping data.*
@@ -44,10 +44,10 @@ TABLE
     Affiliation,
     Description
 FROM "Operations"
-WHERE contains(file.path, "Persons_of_Interest")
+WHERE contains(file.path, "Persons-of-Interest")
 ```
 
----
+-
 
 ## INTELLIGENCE BY DISCIPLINE
 
@@ -79,7 +79,7 @@ FROM "Operations"
 WHERE contains(file.path, "DOCEX") OR contains(file.path, "Documents")
 ```
 
----
+-
 
 ## UNCATEGORISED / PENDING TRIAGE
 *Raw intelligence awaiting discipline classification.*
@@ -93,10 +93,10 @@ WHERE contains(file.path, "Intel")
     AND !contains(file.path, "IMINT")
     AND !contains(file.path, "DOCEX")
     AND !contains(file.path, "Case Files")
-    AND !contains(file.path, "Persons_of_Interest")
+    AND !contains(file.path, "Persons-of-Interest")
     AND file.name != "Intel Pack"
     AND file.name != "Intel Dashboard"
 ```
 
----
+-
 **"Knowledge is Lethality"**

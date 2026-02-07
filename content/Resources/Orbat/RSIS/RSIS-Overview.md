@@ -35,4 +35,4 @@ You operate as a **TIE Cell** (6-man detachment), split into two elements:
 
 RSIS is for players who want high-responsibility, "intel-led" gameplay. You aren't just another rifle; you are the brains of the operation. Without your work, SF is blind.
 
----
+-

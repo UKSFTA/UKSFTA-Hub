@@ -4,12 +4,12 @@
 **LOCATION:** Simulated FOB / MOUT Facility
 **DURATION:** 2 Hours
 
----
+-
 
 ### **OBJECTIVE**
 Verify the candidate's ability to act as the "Technical Edge" in a kinetic environment.
 
----
+-
 
 ### **PHASE 1: THE TECHNICAL LISTENER (SIGINT)**
 *Scenario: Candidate is placed in a listening post (LP) with an ACRE radio rack and a Spectrum Analyser.*
@@ -24,7 +24,7 @@ Verify the candidate's ability to act as the "Technical Edge" in a kinetic envir
 *   [ ] Accuracy of intercept logs.
 *   [ ] Vectoring accuracy (friendly patrol < 50m from target).
 
----
+-
 
 ### **PHASE 2: THE CRIME SCENE (SSE)**
 *Scenario: A room has been "cleared" by SF. Candidate has 3 minutes to exploit.*
@@ -39,7 +39,7 @@ Verify the candidate's ability to act as the "Technical Edge" in a kinetic envir
 *   [ ] Zero "Decoy" items taken (Weight discipline).
 *   [ ] Identification of the "Golden Nugget" (Key intel piece).
 
----
+-
 
 ### **PHASE 3: THE HUMAN ELEMENT (TQ)**
 *Scenario: Interaction with a roleplayer (Civilian or EPW).*
@@ -54,7 +54,7 @@ Verify the candidate's ability to act as the "Technical Edge" in a kinetic envir
 *   [ ] Intel gained (Location revealed).
 *   [ ] Adherence to LOAC.
 
----
+-
 
 **FINAL INSTRUCTOR VERDICT:**
 [ ] **PASS** - Fit for TIE Cell attachment.

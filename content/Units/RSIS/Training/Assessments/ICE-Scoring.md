@@ -4,12 +4,12 @@
 **MODULE:** Phase 1 - Intelligence Doctrine
 **VERSION:** 2026.1
 
----
+-
 
 ### **GRADING CRITERIA**
 *Look for the "Analyst Mindset": connecting the dots rather than just collecting them.*
 
----
+-
 
 ### **SECTION 1: SIGINT**
 
@@ -21,7 +21,7 @@
 *   **Breakdown:** Who (Courier/HVT), What (Moving), Where (To "Green-House"), When (5 mins).
 *   **Advice:** "Command, intercept indicates HVT moving to [Grid of Green-House] in 5 mikes. Recommend ambush or drone surveillance."
 
----
+-
 
 ### **SECTION 2: HUMINT**
 
@@ -33,7 +33,7 @@
 *   **The Meet:** Brush pass, dead drop, or a crowded location where a conversation looks natural. Never bring them to the FOB.
 *   **Verification:** Cross-reference their info. If they say "IED at Grid X," fly a drone over Grid X to look for disturbed earth.
 
----
+-
 
 ### **SECTION 3: SSE**
 
@@ -45,6 +45,6 @@
 *   **Storage:** Anti-static bag (Faraday cage if possible).
 *   **Tagging:** Evidence is useless in court (or intelligence analysis) if we don't know WHERE it came from. "Laptop found in Bedroom 1" links the laptop to the person sleeping there.
 
----
+-
 
-**GRADED BY:** ________________________
+**GRADED BY:** ------------------------

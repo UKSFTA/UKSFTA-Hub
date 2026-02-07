@@ -4,12 +4,12 @@ SERIAL: UKSF-DOCEX-26-001
 ORIGINATOR: J2-CELL, UKSF-TF-ALPHA
 RELEASABLE TO: UKSF, MI6, DI
 
-**DOCUMENT EXPLOITATION REPORT: RECOVERED_DOCUMENT_AM-01**
+**DOCUMENT EXPLOITATION REPORT: RECOVERED-DOCUMENT-AM-01**
 
 **1. DOCUMENT DETAILS**
 
-a. **Original Name:** 2026-01-07_HUMINT_Report_02.md
-b. **New Designation:** RECOVERED_DOCUMENT_AM-01
+a. **Original Name:** 2026-01-07-HUMINT-Report-02.md
+b. **New Designation:** RECOVERED-DOCUMENT-AM-01
 c. **Description:** Personal writings/diary recovered during SSE. Authorship is attributed with high confidence to ABU MIRAJ. The document details his thoughts and actions following a recent operation.
 d. **Assessed Credibility:** A1 (Completely Reliable as a true reflection of the author's thoughts).
 

@@ -2,7 +2,7 @@
 
 This guide defines the protocols for the operational management system and the lifecycle of a Concept of Operations (CONOP).
 
----
+-
 
 ## OPERATIONAL LIFECYCLE
 
@@ -17,16 +17,16 @@ This guide defines the protocols for the operational management system and the l
     *   Maintain accurate metadata:
         *   `type`: "CONOP"
         *   `status`: "Draft" (Advance to "Approved" post-briefing).
-        *   `op_num`: Chronological identifier.
+        *   `op-num`: Chronological identifier.
 
 3.  **Intelligence & Exploitation:**
     *   All acquired field intelligence must be deployed into the `Intel/` sub-directories, categorized by discipline (SIGINT, HUMINT, IMINT, DOCEX).
-    *   Identify and document Persons of Interest (POI) within the `Intel/Persons_of_Interest/` directory.
+    *   Identify and document Persons of Interest (POI) within the `Intel/Persons-of-Interest/` directory.
 
----
+-
 
 ## DASHBOARD SYNCHRONIZATION
 The [[Operations/Operation-Dashboard|Operations-Dashboard]] utilizes Dataview to aggregate all operational data. Accuracy in file metadata is critical for real-time command oversight.
 
----
+-
 **"Everywhere, Unseen"**

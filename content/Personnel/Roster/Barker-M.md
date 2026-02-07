@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "Nyuu.exe"
-rank: "Private"
-rank_order: 19
-call_sign: "N/A"
+full-name: "M. Barker"
+rank: "Sergeant"
+rank-order: 16
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SFSG Training Plt"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SRR Troop HQ"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Private Nyuu.exe
+# Sergeant M. Barker [MC.]
 
 ## Service Record
-- **Rank:** Private
+- **Rank:** Sergeant
 - **Call Sign:** N/A
-- **Current Unit:** SFSG Training Plt
+- **Current Unit:** SRR Troop HQ
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

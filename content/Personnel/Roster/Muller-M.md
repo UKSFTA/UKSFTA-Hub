@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "R. Holding"
-rank: "Recruit"
-rank_order: 20
-call_sign: "N/A"
+full-name: "M. Müller"
+rank: "Flight Lieutenant"
+rank-order: 9
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SFSG Training Plt"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "JSFAW HQ"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Recruit R. Holding
+# Flight Lieutenant M. Müller
 
 ## Service Record
-- **Rank:** Recruit
+- **Rank:** Flight Lieutenant
 - **Call Sign:** N/A
-- **Current Unit:** SFSG Training Plt
+- **Current Unit:** JSFAW HQ
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

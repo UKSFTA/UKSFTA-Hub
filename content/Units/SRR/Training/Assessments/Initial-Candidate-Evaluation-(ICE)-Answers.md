@@ -4,12 +4,12 @@
 **MODULE:** Phase 1 - Doctrinal & Technical Review
 **VERSION:** 2026.1
 
----
+-
 
 ### **GRADING CRITERIA**
 *A "High-Tier" candidate does not just answer the question; they demonstrate an understanding of the second and third-order effects of their actions. Look for mentions of specific mod mechanics (ACE, ACRE, cTAB).*
 
----
+-
 
 ### **SECTION 1: CLOSE TARGET RECONNAISSANCE (CTR)**
 
@@ -27,7 +27,7 @@
 *   **Escalation:** Only when physical contact is imminent or the sentry begins to raise an alarm.
 *   **ACRE Signal:** A pre-briefed "click" code (e.g., three rapid PTT presses) or a specific brevity word (e.g., "BROKEN GLASS").
 
----
+-
 
 ### **SECTION 2: TECHNICAL SURVEILLANCE & COMMS**
 
@@ -38,7 +38,7 @@
 **2.2 [REPORTING & B-D-R-T]**
 *   *Model Transmission:* "Overwatch, this is Recce 1. Contact Report. Bearing 245, Distance 420. Reference red-roofed shed. Target 1x Technical with DShK, 3x hostiles stationary at gate. Break. PIR 4 satisfied. How copy?"
 
----
+-
 
 ### **SECTION 3: MEDICAL & ISOLATION**
 
@@ -50,7 +50,7 @@
 *   **Secondary Action:** Move to the "Secondary ERV" or "Extraction Point" (P-A-C-E plan).
 *   **Non-Electronic Signal:** "Tunnelling" an IR strobe (shielding it so it's only visible from a specific azimuth) or using a signaling mirror toward a known friendly overwatch.
 
----
+-
 
 ### **SECTION 4: MARKSMANSHIP & BALLISTICS (SPOTTER ROLE)**
 
@@ -59,7 +59,7 @@
 *   **Correction:** (Depends on specific mod ballistics, but the logic is key). Left 5m/s wind requires a "Right" hold.
 *   **Authority:** The **Spotter** (in an SRR pair, the spotter is often the more senior/experienced operator and controls the engagement).
 
----
+-
 
-**GRADED BY:** ________________________
+**GRADED BY:** ------------------------
 **DESIGNATION:** SRR Instructor / Section Leader

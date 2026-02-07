@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "Ross Buh"
-rank: "Major"
-rank_order: 8
-call_sign: "N/A"
+full-name: "G. Mockett"
+rank: "Private"
+rank-order: 19
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "TFHQ"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SFSG Training Plt"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Major Ross Buh
+# Private G. Mockett
 
 ## Service Record
-- **Rank:** Major
+- **Rank:** Private
 - **Call Sign:** N/A
-- **Current Unit:** TFHQ
+- **Current Unit:** SFSG Training Plt
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

@@ -1,14 +1,14 @@
 type: "Personnel"
-full_name: "Hans"
+full-name: "Hans"
 rank: "Flying Officer"
-rank_order: 10
-call_sign: "N/A"
+rank-order: 10
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "JSFAW Fixed Wing & Rotary"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "JSFAW Fixed Wing & Rotary"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
 # Flying Officer Hans
 
@@ -18,7 +18,7 @@ tags: [personnel, active]
 - **Current Unit:** JSFAW Fixed Wing & Rotary
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

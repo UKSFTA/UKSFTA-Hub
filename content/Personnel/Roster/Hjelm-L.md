@@ -1,15 +1,15 @@
 type: Personnel
-full_name: L. Hjelm
+full-name: L. Hjelm
 rank: Lance Corporal
-rank_order: 18
-call_sign: N/A
+rank-order: 18
+call-sign: N/A
 status: Active
-current_unit: Med Det HQ
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: Med Det HQ
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - personnel
   - active
----
+-
 
 # Lance Corporal L. Hjelm
 
@@ -19,7 +19,7 @@ tags:
 - **Current Unit:** Medical Detachment
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -32,6 +32,6 @@ tags:
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

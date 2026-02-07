@@ -1,16 +1,16 @@
 type: "CONOP"
-op_name: ""
-op_num: ""
+op-name: ""
+op-num: ""
 status: "Draft"
-start_date: <% tp.date.now("YYYY-MM-DD") %>
-end_date: ""
----
+start-date: <% tp.date.now("YYYY-MM-DD") %>
+end-date: ""
+-
 # CONOP: [Operation/Mission Name]
 **Reference:** [[Related-Op-Order]]
 **Date/Time:** <% tp.date.now("YYYY-MM-DD HH:mm") %>
 **Author:** {{author}}
 
----
+-
 
 ## 1. Situation
 *A brief overview of the environment.*
@@ -42,7 +42,7 @@ end_date: ""
 - **Support Element:** [[Unit-Name]]
 - **Reserve:** [[Unit-Name]]
 
----
+-
 
 ## 4. Coordination Instructions
 - **Timings:**
@@ -51,7 +51,7 @@ end_date: ""
 - **Boundaries:** [[Map-Overlay-Link]]
 - **Rules of Engagement (ROE):** [[ROE-Profile-Alpha]]
 
----
+-
 
 ## 5. Service Support (CSS)
 - **Combat Service Support:**
@@ -60,7 +60,7 @@ end_date: ""
 - **MEDEVAC:** - CCP (Casualty Collection Point) Location: `[Grid]`
   - HLZ (Helo Landing Zone): `[Grid]`
 
----
+-
 
 ## 6. Command & Signal
 - **Command:**
@@ -71,7 +71,7 @@ end_date: ""
   - PACE Plan: (Primary, Alternate, Contingency, Emergency)
   - Nicknames/Code Words:
 
----
+-
 ## Notes & Debrief
 - [ ] Pre-deployment checks complete?
 - [ ] Rehearsals conducted?

@@ -1,14 +1,14 @@
 type: "Personnel"
-full_name: "Toni"
+full-name: "Toni"
 rank: "Trooper"
-rank_order: 19
-call_sign: "N/A"
+rank-order: 19
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SFSG Training Plt"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SFSG Training Plt"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
 # Trooper Toni
 
@@ -18,7 +18,7 @@ tags: [personnel, active]
 - **Current Unit:** SFSG Training Plt
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

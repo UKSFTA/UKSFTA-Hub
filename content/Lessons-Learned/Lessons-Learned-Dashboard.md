@@ -2,7 +2,7 @@
 
 This dashboard provides an overview of documented lessons from operations and training.
 
----
+-
 
 ## All Lessons Learned
 *Browse all documented lessons, sortable and filterable.*
@@ -10,7 +10,7 @@ This dashboard provides an overview of documented lessons from operations and tr
 ```dataview
 TABLE
     date,
-    op_name as "Operation",
+    op-name as "Operation",
     category,
     severity,
     status
@@ -19,7 +19,7 @@ WHERE type = "Lesson Learned"
 SORT date DESC
 ```
 
----
+-
 
 ## Lessons by Category
 *Overview of lessons grouped by their category.*
@@ -34,7 +34,7 @@ GROUP BY category
 SORT category ASC
 ```
 
----
+-
 
 ## Lessons by Severity
 *Overview of lessons grouped by their severity level.*
@@ -49,7 +49,7 @@ GROUP BY severity
 SORT severity DESC
 ```
 
----
+-
 
 ## Open Lessons
 *Lessons that are currently open and require follow-up.*
@@ -57,7 +57,7 @@ SORT severity DESC
 ```dataview
 TABLE
     date,
-    op_name as "Operation",
+    op-name as "Operation",
     category,
     severity
 FROM "Lessons Learned"
@@ -65,7 +65,7 @@ WHERE type = "Lesson Learned" AND status = "Open"
 SORT date ASC
 ```
 
----
+-
 
 ## How to use this system
 

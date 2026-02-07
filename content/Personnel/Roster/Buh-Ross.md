@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "N. Hodge"
-rank: "Warrant Officer Class 2"
-rank_order: 14
-call_sign: "N/A"
+full-name: "Ross Buh"
+rank: "Major"
+rank-order: 8
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "TFHQ"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "TFHQ"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Warrant Officer Class 2 N. Hodge
+# Major Ross Buh
 
 ## Service Record
-- **Rank:** Warrant Officer Class 2
+- **Rank:** Major
 - **Call Sign:** N/A
 - **Current Unit:** TFHQ
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

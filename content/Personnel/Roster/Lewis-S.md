@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "J. Smout"
+full-name: "S. Lewis"
 rank: "Trooper"
-rank_order: 19
-call_sign: "N/A"
+rank-order: 19
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SRR Team Alpha"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SAS Team Alpha"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Trooper J. Smout
+# Trooper S. Lewis
 
 ## Service Record
 - **Rank:** Trooper
 - **Call Sign:** N/A
-- **Current Unit:** SRR Team Alpha
+- **Current Unit:** SAS Team Alpha
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

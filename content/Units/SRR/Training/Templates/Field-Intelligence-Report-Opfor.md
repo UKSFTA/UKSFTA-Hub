@@ -1,6 +1,6 @@
 This document is for the **OPFOR (Opposing Force)** role-players. It ensures that the "intelligence" the candidate is supposed to find actually exists and happens at specific intervals.
 
----
+-
 
 ### **OPFOR DIRECTIVE: SCENARIO "SILENT THREAD"**
 
@@ -12,7 +12,7 @@ This document is for the **OPFOR (Opposing Force)** role-players. It ensures tha
 
 **SUBJECT:** Phase 2 / Session 1 – OPFOR Operational Script
 
----
+-
 
 #### **1. ROLE-PLAYER REQUIREMENTS**
 
@@ -26,7 +26,7 @@ This document is for the **OPFOR (Opposing Force)** role-players. It ensures tha
 #### **2. TIMELINE OF EVENTS (45-MINUTE WINDOW)**
 
 |**TIME (T+)**|**ACTOR**|**ACTION / EVENT**|**PIR CAPTURE**|
-|---|---|---|---|
+|-|-|-|-|
 |**T+00:00**|All|**Baseline Activity:** OPFOR 1 & 2 are stationed at the main gate (TRP 1).|PIR 2 (Security)|
 |**T+10:00**|OPFOR 2|**Static Patrol:** OPFOR 2 leaves the gate and walks a clockwise perimeter to the North-West corner.|PIR 3 (Rotation)|
 |**T+15:00**|OPFOR 3|**Vehicle Arrival:** OPFOR 3 drives a civilian vehicle (e.g., Offroad/SUV) to TRP 2. Parks, but leaves engine running.|PIR 4 (Logistics)|
@@ -35,7 +35,7 @@ This document is for the **OPFOR (Opposing Force)** role-players. It ensures tha
 |**T+38:00**|OPFOR 2|**Security Gap:** OPFOR 2 returns to TRP 1 but enters the building for a "break," leaving the gate unmanned for 3 minutes.|**Vulnerability**|
 |**T+45:00**|OPFOR 3|**Departure:** Vehicle exits the AO via the South road. End of observation window.|End of Session|
 
----
+-
 
 #### **3. INSTRUCTOR NOTES**
 
@@ -46,7 +46,7 @@ This document is for the **OPFOR (Opposing Force)** role-players. It ensures tha
 - **REACTION:** If you spot the candidate (glint, movement, or sound), **do not** immediately kill them. Instead, alert other guards, point in their direction, and begin a "suspicious search." This forces the candidate to execute "Freeze-and-Fade."
     
 
----
+-
 
 **Signed,**
 **SSgt. M. Barker [MC]** 
@@ -54,4 +54,4 @@ This document is for the **OPFOR (Opposing Force)** role-players. It ensures tha
 
 Special Reconnaissance Regiment
 
----
+-

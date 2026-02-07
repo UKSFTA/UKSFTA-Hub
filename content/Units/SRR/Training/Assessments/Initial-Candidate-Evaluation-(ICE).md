@@ -4,12 +4,12 @@
 **MODULE:** Phase 1 - Doctrinal & Technical Review
 **VERSION:** 2026.1
 
----
+-
 
 ### **INSTRUCTIONS TO CANDIDATE**
 *Answer all questions with maximum detail. Where applicable, reference specific technical procedures for **ACE3**, **ACRE2**, and **cTAB**. Your responses will be evaluated on doctrinal accuracy, tactical logic, and technical proficiency.*
 
----
+-
 
 ### **SECTION 1: CLOSE TARGET RECONNAISSANCE (CTR)**
 
@@ -30,7 +30,7 @@ A hostile sentry stops 10m from your position and appears to be looking directly
 *   At what point do you escalate to using your suppressed primary weapon?
 *   What is the immediate ACRE signal to your overwatch team?
 
----
+-
 
 ### **SECTION 2: TECHNICAL SURVEILLANCE & COMMS**
 
@@ -47,7 +47,7 @@ Provide a clear, concise Contact Report for a technical vehicle arriving at a ga
 *   **Target:** Technical with mounted DShK, 3x occupants.
 *   *Write the transmission exactly as it would be spoken over the net.*
 
----
+-
 
 ### **SECTION 3: MEDICAL & ISOLATION**
 
@@ -61,7 +61,7 @@ Communication is lost, and your team is scattered. You reach the **Emergency Ren
 *   What is your secondary action?
 *   How do you signal your status to HQ using a non-electronic method (e.g., IR strobe, signaling mirror, or VS-17 panel)?
 
----
+-
 
 ### **SECTION 4: MARKSMANSHIP & BALLISTICS (SPOTTER ROLE)**
 
@@ -71,9 +71,9 @@ As a spotter for an SRR sniper pair, you are ranging a target at 850m with a 5m/
 *   Calculate the correction (in Mils or MOA) if the shooter is using a .338 Lapua platform.
 *   Who has the final authority to authorize the shot—the shooter or the spotter?
 
----
+-
 
-**CANDIDATE SIGNATURE:** ________________________
+**CANDIDATE SIGNATURE:** ------------------------
 **DATE:** 07 FEB 2026
 
 **INSTRUCTOR EVALUATION:** [ PASS / FAIL / REMO ]

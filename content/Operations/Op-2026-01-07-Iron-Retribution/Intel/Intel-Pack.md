@@ -6,12 +6,12 @@ ORIGINATOR: J2-CELL, UKSF-TF-ALPHA
 **INTELLIGENCE SUMMARY (INTSUM)**
 
 **REF:**
-A. [[CONOP-2026-01-14|OPORD---OPERATION-SILENT-HERMES]]
-B. [[2026-01-07_SIGINT_Intercept_XR49-B7S|SIGINT-INTERCEPT-XR49-B7S]]
-C. [[2026-01-07_HUMINT_Report_01|HUMINT-REPORT-01]]
-D. [[2026-01-07_CaseFile_Persons_of_interest|CASEFILE-POI-2026-01-07]]
+A. [[CONOP-2026-01-14|OPORD-OPERATION-SILENT-HERMES]]
+B. [[2026-01-07-SIGINT-Intercept-XR49-B7S|SIGINT-INTERCEPT-XR49-B7S]]
+C. [[2026-01-07-HUMINT-Report-01|HUMINT-REPORT-01]]
+D. [[2026-01-07-CaseFile-Persons-of-interest|CASEFILE-POI-2026-01-07]]
 
----
+-
 
 **1. OVERALL ASSESSMENT (C2)**
 
@@ -21,7 +21,7 @@ b. **Hostile Network:** A network of actors, codenamed "THE MASON" (Status: KIA)
 
 c. **Link to DPRK:** The direct link between the MASON/FERRYMAN network and the primary objective of OP SILENT HERMES in the DPRK remains unclear. However, their awareness of the operation presents a significant threat to mission success and force security.
 
----
+-
 
 **2. HOSTILE ACTORS**
 
@@ -40,7 +40,7 @@ c. **ABU MIRAJ**
     (2) **Current Status:** Captured. Was located on Sanda Island (unconfirmed).
     (3) **Assessment (C3):** MIRAJ was likely developing a device for THE MASON. His capture may yield technical intelligence on the network's capabilities. His psychological profile suggests he may be an unreliable source but could be manipulated.
 
----
+-
 
 **3. ENEMY CAPABILITIES (DPRK - As per REF A)**
 
@@ -48,7 +48,7 @@ a. **Disposition:** KPA controls all territory. Strategic Rocket Forces operate 
 b. **Capabilities:** Rapid internal deployment, extensive hardened infrastructure, civilian informant networks.
 c. **Limitations:** Rigid C2 structure, limited decentralised ISR, reliance on fixed infrastructure.
 
----
+-
 
 **4. INTELLIGENCE GAPS & REQUIREMENTS (KIRs)**
 
@@ -65,7 +65,7 @@ c. **OP SILENT HERMES Primary Objectives:**
     (1) Precise location and status of undeclared DPRK strategic missile infrastructure.
     (2) Current status, location, and condition of the detained Western technical advisor.
 
----
+-
 
 **5. SOURCE AND RELIABILITY**
 *This summary is based on SIGINT and HUMINT of varying reliability. Source and information credibility is graded using the Admiralty System (e.g., A1-F6).*

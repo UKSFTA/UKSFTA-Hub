@@ -2,7 +2,7 @@
 
 This document defines the formalized technical standards for the employment of specialized equipment within the SRR.
 
----
+-
 
 ## 1. COMMUNICATIONS (ACRE-2)
 SRR operators often operate in isolated, low-footprint teams; communication discipline is critical to mission success.
@@ -13,7 +13,7 @@ SRR operators often operate in isolated, low-footprint teams; communication disc
 - **Net Discipline:** Adherence to UKSF brevity codes; transmissions are to be concise and factual.
 - **Emergency Comms:** Mandatory proficiency in Emergency Rendezvous (ERV) comms plans and "blind transmission" protocols.
 
----
+-
 
 ## 2. MEDICAL & FIELD INTERACTION (ACE-3)
 SRR medical training focuses on **Prolonged Field Care (PFC)** and **Covert Casualty Management**.
@@ -23,7 +23,7 @@ SRR medical training focuses on **Prolonged Field Care (PFC)** and **Covert Casu
 - **Tactical Triage:** In covert environments, casualties must be extracted to a "Cold Zone" prior to comprehensive treatment.
 - **Advanced Care:** Patrol Medics are authorized for the employment of surgical kits and fluid resuscitation (Saline/Blood).
 
----
+-
 
 ## 3. cTAB / BLUE FORCE TRACKER (BFT)
 The cTAB system provides the digital Common Operational Picture (COP).
@@ -38,11 +38,11 @@ The cTAB system provides the digital Common Operational Picture (COP).
   - Purple = Intel/PIR/Objective
 - **Signature Management:** BFT transmission may be disabled in high-threat environments to prevent EW detection.
 
----
+-
 
 ## 4. OPTICS & SURVEILLANCE
 - **Vector IV / LRTV:** Proficiency in rangefinding and B-D-R-T (Bearing, Distance, Reference, Target) reporting.
 - **ISR Assets:** Tactical employment of the AR-2 Darter for over-the-horizon reccenaissance without compromising the OP location.
 - **Thermal Imaging:** Understanding the limitations of thermal optics (e.g., occlusion by glass/weather) and utilizing appropriate polarity (White-Hot/Black-Hot) for target identification.
 
----
+-

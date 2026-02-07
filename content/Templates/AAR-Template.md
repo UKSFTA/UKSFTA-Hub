@@ -1,13 +1,13 @@
 type: "AAR"
-op_name: ""
-op_num: ""
----
+op-name: ""
+op-num: ""
+-
 # After Action Report (AAR): [Operation Name]
 **Reference:** [[CONOP]], [[Op-Log]]
 **Date/Time of AAR:** <% tp.date.now("YYYY/MM/DD HH:mm") %>
 **Participants:**
 
----
+-
 
 ## 1. What was supposed to happen?
 *Refer to the CONOP mission and commander's intent.*
@@ -33,7 +33,7 @@ op_num: ""
 - [ ] **Item 1:** (Description, Assigned to, Due Date)
 - [ ] **Item 2:** (Description, Assigned to, Due Date)
 
----
+-
 ## Signatures
 - **AAR Conductor:**
 - **Unit Commander:**

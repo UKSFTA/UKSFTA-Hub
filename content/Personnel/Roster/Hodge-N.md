@@ -1,24 +1,24 @@
 type: "Personnel"
-full_name: "C. Quack"
-rank: "Recruit"
-rank_order: 20
-call_sign: "N/A"
+full-name: "N. Hodge"
+rank: "Warrant Officer Class 2"
+rank-order: 14
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SFSG Training Plt"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "TFHQ"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
-# Recruit C. Quack
+# Warrant Officer Class 2 N. Hodge
 
 ## Service Record
-- **Rank:** Recruit
+- **Rank:** Warrant Officer Class 2
 - **Call Sign:** N/A
-- **Current Unit:** SFSG Training Plt
+- **Current Unit:** TFHQ
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

@@ -1,14 +1,14 @@
 type: "Personnel"
-full_name: "Brooks"
+full-name: "Brooks"
 rank: "Trooper"
-rank_order: 19
-call_sign: "N/A"
+rank-order: 19
+call-sign: "N/A"
 status: "Active"
 phase: "Active"
-current_unit: "SRR Team Alpha"
-date_joined: <% tp.date.now("YYYY-MM-DD") %>
+current-unit: "SRR Team Alpha"
+date-joined: <% tp.date.now("YYYY-MM-DD") %>
 tags: [personnel, active]
----
+-
 
 # Trooper Brooks
 
@@ -18,7 +18,7 @@ tags: [personnel, active]
 - **Current Unit:** SRR Team Alpha
 - **Date Joined:** <% tp.date.now("YYYY-MM-DD") %>
 
----
+-
 
 ## Training Progression
 - **Current Phase:** Active
@@ -31,6 +31,6 @@ tags: [personnel, active]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
----
+-
 
 ## Memos & Assessments

@@ -2,7 +2,7 @@
 
 This document outlines the formalized syllabus for the RSIS Tactical Intelligence & Exploitation (TIE) qualification. Training is conducted in **2-hour modular sessions**.
 
----
+-
 
 ## 1. PHASE 1: SELECTION & APTITUDE
 **Objective:** Evaluation of candidate analytical reasoning and communication skills.
@@ -11,7 +11,7 @@ This document outlines the formalized syllabus for the RSIS Tactical Intelligenc
 2. **Pattern Analysis:** 2-hour practical assessment identifying insurgent nodes from disparate data sets.
 3. **Information Management:** 2-hour stress-test managing multiple intelligence feeds during active combat.
 
----
+-
 
 ## 2. PHASE 2: CORE TECHNICAL SKILLS
 **Objective:** Technical mastery of the Intelligence and Exploitation toolkit.
@@ -31,7 +31,7 @@ This document outlines the formalized syllabus for the RSIS Tactical Intelligenc
 - **Legal Framework:** Adherence to unit ROE and international humanitarian law.
 - **Reporting:** Conversion of raw field data into standardized Intelligence Reports (INTREP).
 
----
+-
 
 ## 3. PHASE 3: SPECIALIST TRACKS
 **Objective:** Refinement of skills for specific operational roles.
@@ -46,7 +46,7 @@ This document outlines the formalized syllabus for the RSIS Tactical Intelligenc
 - **Rapid Forensics:** Triage of digital media and documents in a kinetic environment.
 - **Field Interrogation:** Real-time questioning of detainees to generate immediate follow-on objectives.
 
----
+-
 
 ## 4. QUALIFICATION
 Successful completion of the Final Training Exercise (FTX) (2-hour duration) authorizes the candidate to wear the **RSIS Flash** and be attached to an operational TIE Cell.

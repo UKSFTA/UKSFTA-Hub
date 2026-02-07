@@ -2,7 +2,7 @@
 
 This dashboard serves as the central hub for all Special Reconnaissance Regiment (SRR) training activities, curriculum, and doctrinal standards. All candidates and instructors must adhere to the protocols outlined herein.
 
----
+-
 
 ## QUICK LINKS
 
@@ -11,7 +11,7 @@ This dashboard serves as the central hub for all Special Reconnaissance Regiment
 - [**Technical Standards (ACE/ACRE/cTAB)**](Reference/Technical-Standards.md)
 - [**Operational Templates**](Templates/Templates-Dashboard.md)
 
----
+-
 
 ## TRAINING PIPELINE
 
@@ -36,7 +36,7 @@ Upon completion of core training, operators may specialize in:
 - **Signals Intelligence Analyst (SIGINT)**
 - **Specialist Driver (SD)**
 
----
+-
 
 ## ACTIVE TRAINING RECORDS
 
@@ -46,12 +46,12 @@ FROM "Units/SRR/Training/Assessments/Results"
 WHERE file.name != "Assessments-Dashboard"
 ```
 
----
+-
 
 ## REFERENCE & DOCTRINE
 - [PIR Standards](Reference/Priority%20Intelligence%20Requirements%20(PIR).md)
 - [UK Military Ranks](../../../Documentation/UK-Military-Ranks.md)
 - [UKSF Progression](../../../Training/UKSF%20Progression.pdf)
 
----
+-
 **"Everywhere, Unseen"**
