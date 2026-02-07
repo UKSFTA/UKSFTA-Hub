@@ -43,9 +43,9 @@ export const defaultContentPageLayout: PageLayout = {
       folderClickBehavior: "collapse",
       mapFn: (node) => {
         // Highlighting important folders
-        if (node.name === "Personnel") node.displayName = "👥 Personnel"
-        if (node.name === "Operations") node.displayName = "⚔️ Operations"
-        if (node.name === "Intel Dashboard") node.displayName = "📡 Intelligence"
+        if (node.name === "Personnel") node.displayName = "Personnel"
+        if (node.name === "Operations") node.displayName = "Operations"
+        if (node.name === "Intel Dashboard") node.displayName = "Intelligence"
       },
     }),
   ],
