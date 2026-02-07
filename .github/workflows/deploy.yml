@@ -30,8 +30,8 @@ jobs:
         run: npm install
       - name: Build Quartz
         env:
-          UNITCOMMANDER_API_KEY: ${{ secrets.UNITCOMMANDER_API_KEY }}
-          UNITCOMMANDER_UNIT_ID: ${{ secrets.UNITCOMMANDER_UNIT_ID }}
+          UNIT_COMMANDER_BOT_TOKEN: ${{ secrets.UNIT_COMMANDER_BOT_TOKEN }}
+          UNIT_COMMANDER_COMMUNITY_ID: ${{ secrets.UNIT_COMMANDER_COMMUNITY_ID }}
         run: npx quartz build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

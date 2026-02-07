@@ -32,8 +32,8 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
           visit(tree, "code", (node: Code) => {
             if (node.lang === "dataview") {
               const query = node.value.toLowerCase()
-              const apiKey = process.env.UNITCOMMANDER_API_KEY
-              const unitId = process.env.UNITCOMMANDER_UNIT_ID
+              const apiKey = process.env.UNIT_COMMANDER_BOT_TOKEN
+              const unitId = process.env.UNIT_COMMANDER_COMMUNITY_ID
 
               // Handle Personnel Tables
               if (query.includes('from "personnel/roster"') || query.includes('from "personnel"')) {
