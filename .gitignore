@@ -20,3 +20,8 @@ Thumbs.db
 *.key
 secrets.json
 .env
+
+# Quartz
+node_modules
+.quartz-cache
+public

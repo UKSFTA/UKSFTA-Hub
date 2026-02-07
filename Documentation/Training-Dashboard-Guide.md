@@ -1,28 +1,32 @@
-# Training Dashboard Guide
+# [RESTRICTED] TRAINING DASHBOARD GUIDE
 
-This guide explains how to use the Training Dashboard and the associated personnel files to track candidate progression.
+This guide defines the protocols for utilizing the Training Dashboard and associated personnel files for candidate tracking.
 
-## How to Use
+---
 
-1.  **Add New Candidates:**
-    *   Navigate to the `UKSF Taskforce Alpha/Templates` folder.
-    *   Copy the `Personnel-Template.md` file.
-    *   Paste the copied file into the `UKSF Taskforce Alpha/Personnel/Candidates` folder.
-    *   Rename the file to the candidate's name (e.g., `Smith_J.md`).
-    *   Fill out the metadata and details in the new file. The `status` should initially be set to `Application`.
+## OPERATIONAL USAGE
 
-2.  **Update Progression:**
-    *   To move a candidate along the pipeline, simply edit the `status:` field in their markdown file (e.g., `Doe_J.md`).
-    *   For example, changing `status: "Application"` to `status: "Basic Training"` will automatically move them on the [[UKSF Taskforce Alpha/Training/Training Dashboard|Training Dashboard]].
+1.  **Candidate Induction:**
+    *   Initialize a new personnel file using the `Personnel-Template.md`.
+    *   Deploy the file into the `Personnel/Roster/` directory.
+    *   Set the `status` metadata to `Basic Training` or `Continuation`.
+    *   Assign the appropriate `phase` (e.g., `Selection`, `Phase 2`).
 
-## Progression Statuses
+2.  **Progression Updates:**
+    *   Updates to the `status` or `phase` fields in the metadata will automatically synchronize with the unit-specific dashboards.
+    *   Training is conducted in **2-hour modular blocks**. Ensure all session notes are recorded in the candidate's dossier.
 
-The following are the standard statuses to use in the `status:` field of a personnel file:
+---
 
-- `Application`
-- `Interview`
-- `Basic Training`
-- `JSFAW`
-- `Continuation`
-- `Specialist Training`
-- `Active`
+## PROGRESSION STATUSES
+
+The following metadata values are standardized for Task Force tracking:
+
+- `Basic Training` (SFSG Phase)
+- `JSFAW` (Aviation Phase)
+- `Continuation` (Unit Selection)
+- `Specialist Training` (Post-Selection)
+- `Active` (Operational Attachment)
+
+---
+**"Everywhere, Unseen"**

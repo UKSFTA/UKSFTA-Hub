@@ -3,5 +3,17 @@
   "showUnsupportedFiles": true,
   "uriCallbacks": true,
   "newFileLocation": "root",
-  "attachmentFolderPath": "./Resources"
+  "attachmentFolderPath": "./Resources",
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "node_modules/",
+    "quartz/",
+    "public/",
+    ".quartz-cache/",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    "quartz.config.ts",
+    "quartz.layout.ts"
+  ]
 }

@@ -1,25 +1,32 @@
-# Operations Dashboard Guide
+# [RESTRICTED] OPERATIONS DASHBOARD GUIDE
 
-This guide explains how to use the Operations Dashboard and the associated note-taking system for managing operations.
+This guide defines the protocols for the operational management system and the lifecycle of a Concept of Operations (CONOP).
 
-## How to use this system
+---
 
-1.  **Create a new Operation:**
-    *   Create a new folder in the `UKSF Taskforce Alpha/Operations` directory. Name it with the operation number and name, for example `Op-2025-002-Another-Op`.
-    *   Inside the new folder, create the `Intel`, `Planning`, `Execution`, and `Post-Op` sub-folders.
+## OPERATIONAL LIFECYCLE
 
-2.  **Start a new CONOP:**
-    *   Go to the `UKSF Taskforce Alpha/Templates` folder and copy the `CONOP-Template.md`.
-    *   Paste it in your new operation's `Planning` folder.
-    *   Rename the file to `CONOP-[op_num].md`.
-    *   Fill out the metadata at the top of the file (the `---` section).
+1.  **Operation Initialization:**
+    *   Create a dedicated directory in `Operations/` using the format `Op-YYYY-MM-DD-Name`.
+    *   Initialize the following sub-directories: `Intel/`, `Planning/`, `Execution/`, `Post-Op/`, and `Resources/`.
+    *   Further categorize `Resources/` into `Intel/`, `Documents/`, and `Briefings/`.
+
+2.  **CONOP Development:**
+    *   Initialize a new CONOP using the `CONOP-Template.md`.
+    *   Deploy the file into the operation's `Planning/` directory.
+    *   Maintain accurate metadata:
         *   `type`: "CONOP"
-        *   `op_name`: "The name of your operation"
-        *   `op_num`: "The operation number, e.g., 2025-002"
-        *   `status`: "Draft" (change to "Approved" when ready)
+        *   `status`: "Draft" (Advance to "Approved" post-briefing).
+        *   `op_num`: Chronological identifier.
 
-3.  **File other documents:**
-    *   Use the other templates (`Intel-Brief-Template.md`, `AAR-Template.md`, etc.) and place them in the corresponding folders of your operation. Remember to fill out the metadata.
+3.  **Intelligence & Exploitation:**
+    *   All acquired field intelligence must be deployed into the `Intel/` sub-directories, categorized by discipline (SIGINT, HUMINT, IMINT, DOCEX).
+    *   Identify and document Persons of Interest (POI) within the `Intel/Persons_of_Interest/` directory.
 
-4.  **View your operations:**
-    *   The [[UKSF Taskforce Alpha/Operations/Operation Dashboard|Operations Dashboard]] will automatically update as you create and modify your operation files.
+---
+
+## DASHBOARD SYNCHRONIZATION
+The [[Operations/Operation Dashboard|Operations Dashboard]] utilizes Dataview to aggregate all operational data. Accuracy in file metadata is critical for real-time command oversight.
+
+---
+**"Everywhere, Unseen"**

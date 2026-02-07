@@ -1,21 +1,21 @@
-# RSIS Order of Battle & Overview
+# [RESTRICTED] RSIS ORDER OF BATTLE & OVERVIEW
 
 This dashboard provides the foundational doctrine, structure, and operational role of the Royal Secret Intelligence Service (RSIS).
 
 ---
 
-## Foundation & Doctrine
-- [RSIS Branch Brief](RSIS%20Brief.md) - Core mission and gameplay pillars.
-- [RSIS Operational Overview](RSIS%20Overview.md) - Where and how the unit operates.
+## FOUNDATION & DOCTRINE
+- [RSIS Branch Brief](RSIS%20Brief.md) - Core mission and operational pillars.
+- [RSIS Operational Overview](RSIS%20Overview.md) - Tactical deployment and TIE Cell function.
 
 ---
 
-## Unit Structure (ORBAT)
-- [RSIS Detailed ORBAT](RSIS%20Orbat.md) - Personnel and roles within the TIE Cell.
+## UNIT STRUCTURE (ORBAT)
+- [RSIS Detailed ORBAT](RSIS%20Orbat.md) - Personnel and role assignments within the TIE Cell.
 
 ---
 
-## Technical & Training
+## TECHNICAL & TRAINING
 - [RSIS Training Dashboard](../../../Units/RSIS/Training/Training.md)
 - [Technical Standards](../../../Units/RSIS/Training/Reference/Technical-Standards.md)
 

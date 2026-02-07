@@ -1,4 +1,8 @@
-# Operations Dashboard
+# [RESTRICTED] TASK FORCE OPERATION DASHBOARD
+
+This dashboard provides the command-level overview of all active, planned, and historic operations for the Task Force.
+
+---
 
 ```dataviewjs
 // Dynamic Mission Status Board
@@ -41,57 +45,44 @@ dv.table(
     ["Phase", "Count", "Missions"],
     tableData
 );
-
-// You can add more advanced logic here, e.g., highlighting based on dates
-// For example, to find operations with 'Executing' status that have a specific deadline soon
-/*
-let criticalExecution = operations
-    .filter(p => getMissionPhase(p.status) === "Execution" && p.end_date)
-    .filter(p => dv.date(p.end_date).diff(dv.date('now'), 'days') <= 7 && dv.date(p.end_date).diff(dv.date('now'), 'days') >= 0);
-
-if (criticalExecution.length > 0) {
-    dv.header(4, "‼️ Critical Missions (Deadline Soon)");
-    dv.list(criticalExecution.map(p => p.file.link + ` (Due: ${p.end_date})`));
-}
-*/
 ```
 
 ---
 
-## Active Operations
-*List of all ongoing operations.*
+## ACTIVE OPERATIONS
+*Ongoing operational deployments.*
 
 ```dataview
 LIST
 FROM "Operations"
-WHERE file.folder = "Operations"
+WHERE status = "Executing" OR status = "In Progress"
 ```
 
 ---
 
-## Mission Planning (CONOPs)
-*All operation plans, separated by status.*
+## MISSION PLANNING (CONOPs)
+*All Concept of Operations documents, sorted by approval status.*
 
-### Drafts
+### APPROVED / READY
 ```dataview
-TABLE op_name, op_num, status
+TABLE op_name AS "Operation Name", op_num AS "Op No.", status AS "Status"
+FROM "Operations"
+WHERE type = "CONOP" AND (status = "Approved" OR status = "Planning")
+SORT op_num ASC
+```
+
+### DRAFT / IN-DEVELOPMENT
+```dataview
+TABLE op_name AS "Operation Name", op_num AS "Op No.", status AS "Status"
 FROM "Operations"
 WHERE type = "CONOP" AND status = "Draft"
 SORT op_num ASC
 ```
 
-### Approved
-```dataview
-TABLE op_name, op_num, status
-FROM "Operations"
-WHERE type = "CONOP" AND status = "Approved"
-SORT op_num ASC
-```
-
 ---
 
-## After Action Reports (AARs)
-*Recently completed AARs.*
+## AFTER ACTION REPORTS (AARs)
+*Standardized post-operational analysis.*
 
 ```dataview
 LIST
@@ -103,4 +94,6 @@ LIMIT 10
 
 ---
 > [!NOTE] Documentation
-> For instructions on how to use this dashboard, see the [[Documentation/Operations-Dashboard-Guide|Operations Dashboard Guide]].
+> For detailed instructions on the operational cycle, refer to the [[Documentation/Operations-Dashboard-Guide|Operations Dashboard Guide]].
+
+**"Everywhere, Unseen"**

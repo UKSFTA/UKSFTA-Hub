@@ -1,11 +1,11 @@
-# Intel Dashboard
+# [RESTRICTED] TASK FORCE INTEL DASHBOARD
 
-This dashboard provides a centralized overview of all intelligence gathered across all operations.
+This dashboard provides a centralized overview of all intelligence collected, processed, and exploited across all operational theatres.
 
 ---
 
-## Latest Intelligence (Last 7 Days)
-*A list of the most recently added intelligence files.*
+## LATEST INTELLIGENCE (LAST 7 DAYS)
+*Recently acquired intelligence reports.*
 
 ```dataview
 TABLE
@@ -13,27 +13,29 @@ TABLE
     op_name as "Operation",
     file.link as "File"
 FROM "Operations"
-WHERE file.folder.path.contains("Intel") AND file.cday >= date("now") - dur(7 days)
+WHERE (contains(file.path, "Intel") OR contains(file.path, "DOCEX") OR contains(file.path, "SIGINT") OR contains(file.path, "HUMINT")) 
+    AND file.cday >= date("now") - dur(7 days)
+    AND file.name != "Intel Pack"
 SORT file.cday DESC
 ```
 
 ---
 
-## Intelligence by Operation
-*All intelligence files, grouped by the operation they are associated with.*
+## INTELLIGENCE BY OPERATION
+*Intelligence grouping by theatre of operations.*
 
 ```dataview
 LIST rows.file.link
 FROM "Operations"
-WHERE file.folder.path.contains("Intel")
+WHERE contains(file.path, "Intel") OR contains(file.path, "DOCEX") OR contains(file.path, "SIGINT") OR contains(file.path, "HUMINT")
 GROUP BY op_name
 SORT op_name ASC
 ```
 
 ---
 
-## Persons of Interest (POI)
-*A list of all profiled individuals.*
+## PERSONS OF INTEREST (POI)
+*Individual profiles and network mapping data.*
 
 ```dataview
 TABLE
@@ -47,8 +49,7 @@ WHERE contains(file.path, "Persons_of_Interest")
 
 ---
 
-## Intel by Type
-*Intelligence categorized by its source.*
+## INTELLIGENCE BY DISCIPLINE
 
 ### SIGINT (Signals Intelligence)
 ```dataview
@@ -71,18 +72,31 @@ FROM "Operations"
 WHERE contains(file.path, "IMINT")
 ```
 
+### DOCEX (Document Exploitation)
+```dataview
+LIST
+FROM "Operations"
+WHERE contains(file.path, "DOCEX") OR contains(file.path, "Documents")
+```
+
 ---
 
-## Uncategorized Intelligence
-*Intelligence files that have not yet been categorized.*
+## UNCATEGORISED / PENDING TRIAGE
+*Raw intelligence awaiting discipline classification.*
 
 ```dataview
 LIST
 FROM "Operations"
-WHERE file.folder.path.contains("Intel")
+WHERE contains(file.path, "Intel")
     AND !contains(file.path, "SIGINT")
     AND !contains(file.path, "HUMINT")
     AND !contains(file.path, "IMINT")
+    AND !contains(file.path, "DOCEX")
     AND !contains(file.path, "Case Files")
-    AND file.name != "Intel Pack.md"
+    AND !contains(file.path, "Persons_of_Interest")
+    AND file.name != "Intel Pack"
+    AND file.name != "Intel Dashboard"
 ```
+
+---
+**"Knowledge is Lethality"**
