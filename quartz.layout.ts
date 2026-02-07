@@ -8,8 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/UKSFTA/UKSFTA-Hub",
     },
   }),
 }
@@ -38,7 +37,17 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Taskforce Archive",
+      folderDefaultState: "collapsed",
+      folderClickBehavior: "collapse",
+      mapFn: (node) => {
+        // Highlighting important folders
+        if (node.name === "Personnel") node.displayName = "👥 Personnel"
+        if (node.name === "Operations") node.displayName = "⚔️ Operations"
+        if (node.name === "Intel Dashboard") node.displayName = "📡 Intelligence"
+      },
+    }),
   ],
   right: [
     Component.Graph(),
