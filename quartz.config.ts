@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "uksfta.github.io/UKSFTA-Hub",
-    ignorePatterns: ["private", "templates", ".obsidian", "node_modules", "quartz", ".git", "package.json", "package-lock.json", "tsconfig.json", "quartz.config.ts", "quartz.layout.ts"],
+    ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

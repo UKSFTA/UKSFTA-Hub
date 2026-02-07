@@ -25,5 +25,6 @@
   "dataview",
   "obsidian-pandoc",
   "obsidian-citation-plugin",
-  "copilot"
+  "copilot",
+  "obsidian-git"
 ]

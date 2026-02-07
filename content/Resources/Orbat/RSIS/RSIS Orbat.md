@@ -1,6 +1,3 @@
-
----
-
 ### **Tactical Intelligence & Exploitation (TIE) Cell**
 
 **Official Notice - Sectional Order of Battle (ORBAT)**

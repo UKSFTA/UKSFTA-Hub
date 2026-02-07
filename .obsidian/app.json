@@ -7,13 +7,13 @@
   "promptDelete": false,
   "userIgnoreFilters": [
     "node_modules/",
-    "quartz/",
     "public/",
     ".quartz-cache/",
     "package.json",
     "package-lock.json",
     "tsconfig.json",
     "quartz.config.ts",
-    "quartz.layout.ts"
+    "quartz.layout.ts",
+    "/quartz/"
   ]
 }
