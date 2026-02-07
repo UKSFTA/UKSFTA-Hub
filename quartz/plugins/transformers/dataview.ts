@@ -30,15 +30,10 @@ const getFiles = (dir: string): string[] => {
     return files.flat().filter(f => f.endsWith(".md"))
 }
 
-// Clean up malformed YAML and Templater tags
 function cleanMetadata(content: string): string {
-    // 1. Replace curly quotes with straight quotes
     let cleaned = content.replace(/[“”]/g, '"').replace(/[‘’]/g, "'")
-    
-    // 2. Replace Templater date tags with a static date (Today)
     const today = new Date().toISOString().split('T')[0]
     cleaned = cleaned.replace(/<% tp\.date\.now\(.*?\) %>/g, today)
-    
     return cleaned
 }
 
@@ -46,7 +41,6 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
   return {
     name: "DataviewEmulation",
     textTransform(_ctx, src) {
-        // Run the metadata cleaner on every file before it's parsed
         return cleanMetadata(typeof src === 'string' ? src : src.toString())
     },
     markdownPlugins() {
@@ -63,6 +57,7 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
               const p = (async () => {
                 let tableHtml = ""
                 
+                // 1. RECENT ACTIVITY
                 if (query.includes('file.mtime') && query.includes('limit 10')) {
                     const allFiles = getFiles(path.join(process.cwd(), "content"))
                     const recentFiles = allFiles
@@ -82,6 +77,7 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                     tableHtml += `</tbody></table>`
                 }
 
+                // 2. PERSONNEL
                 else if (query.includes('from "personnel')) {
                     let personnel: any[] = []
                     if (apiKey && unitId) {
@@ -117,21 +113,51 @@ export const DataviewEmulation: QuartzTransformerPlugin = () => {
                     }
                 }
 
+                // 3. OPERATIONS & AARs
                 else if (query.includes('from "operations"')) {
                     const files = getFiles(path.join(process.cwd(), "content", "Operations"))
                     const operations = files.map(f => {
                         const { data } = matter(cleanMetadata(fs.readFileSync(f, "utf-8")))
-                        return { ...data, path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", "") }
+                        const name = path.basename(f, ".md")
+                        return { 
+                            ...data, 
+                            fileName: name,
+                            path: path.relative(path.join(process.cwd(), "content"), f).replace(".md", "") 
+                        }
                     })
 
+                    // Handle Active Ops
                     if (query.includes('executing') || query.includes('in progress')) {
-                        const active = operations.filter(op => op.type === "CONOP" && /Executing|In Progress/i.test(op.status))
-                        tableHtml = `<table class="dataview-table"><thead><tr><th>Operation</th><th>Status</th></tr></thead><tbody>`
-                        active.forEach(op => {
-                            tableHtml += `<tr><td><a href="./${op.path}">${op.op_name || op.path}</a></td><td>${op.status}</td></tr>`
-                        })
-                        tableHtml += `</tbody></table>`
+                        const active = operations.filter(op => 
+                            (op.type === "CONOP" || op.fileName.includes("CONOP")) && 
+                            /Executing|In Progress|Active/i.test(op.status || "")
+                        )
+                        if (active.length > 0) {
+                            tableHtml = `<table class="dataview-table"><thead><tr><th>Operation</th><th>Status</th></tr></thead><tbody>`
+                            active.forEach(op => {
+                                tableHtml += `<tr><td><a href="./${op.path}">${op.op_name || op.fileName}</a></td><td>${op.status}</td></tr>`
+                            })
+                            tableHtml += `</tbody></table>`
+                        } else {
+                            tableHtml = `<p>No active operations found in database.</p>`
+                        }
                     } 
+                    // Handle AARs
+                    else if (query.includes('type = "aar"') || query.includes('aar')) {
+                        const aars = operations.filter(op => 
+                            op.type === "AAR" || op.fileName.toLowerCase().includes("aar")
+                        ).slice(0, 10)
+                        
+                        if (aars.length > 0) {
+                            tableHtml = `<ul>`
+                            aars.forEach(op => {
+                                tableHtml += `<li><a href="./${op.path}">${op.op_name || op.fileName}</a></li>`
+                            })
+                            tableHtml += `</ul>`
+                        } else {
+                            tableHtml = `<p>No After Action Reports filed.</p>`
+                        }
+                    }
                 }
 
                 if (tableHtml) {
