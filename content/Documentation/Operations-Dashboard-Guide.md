@@ -2,7 +2,7 @@
 
 This guide defines the protocols for the operational management system and the lifecycle of a Concept of Operations (CONOP).
 
--
+---
 
 ## OPERATIONAL LIFECYCLE
 
@@ -23,10 +23,10 @@ This guide defines the protocols for the operational management system and the l
     *   All acquired field intelligence must be deployed into the `Intel/` sub-directories, categorized by discipline (SIGINT, HUMINT, IMINT, DOCEX).
     *   Identify and document Persons of Interest (POI) within the `Intel/Persons-of-Interest/` directory.
 
--
+---
 
 ## DASHBOARD SYNCHRONIZATION
 The [[Operations/Operation-Dashboard|Operations-Dashboard]] utilizes Dataview to aggregate all operational data. Accuracy in file metadata is critical for real-time command oversight.
 
--
+---
 **"Everywhere, Unseen"**

@@ -3,7 +3,7 @@
 > [!quote] Message of the Day
 > *Welcome to the UKSF Taskforce Alpha vault. All systems are operational. Operations conducted weekly.*
 
--
+---
 
 ## Mission Control
 *Central dashboards for managing all aspects of the Task Force.*
@@ -14,7 +14,7 @@
 -   **[[Lessons-Learned/Lessons-Learned-Dashboard|Lessons-Learned-Dashboard]]**: Document and analyze insights from operations.
 -   **[[Intel-Dashboard|Intel-Dashboard]]**: Centralized overview of all intelligence.
 
--
+---
 
 ## Ongoing Operations Summary
 *A summary of all currently active operations.*
@@ -29,7 +29,7 @@ WHERE type = "CONOP" AND (status = "Executing" OR status = "In Progress")
 SORT (end-date - date("now")).days ASC
 ```
 
--
+---
 
 ## Resources & Documentation
 
@@ -37,7 +37,7 @@ SORT (end-date - date("now")).days ASC
 -   **[[Documentation/Operations-Dashboard-Guide|Documentation]]**: Guides and documentation for using this system.
 -   **[[Templates/AAR-Template|Templates]]**: All available templates.
 
--
+---
 
 ## Recent Activity
 *This section can be customized with Dataview queries to show recent changes.*

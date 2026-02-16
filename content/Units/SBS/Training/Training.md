@@ -2,7 +2,7 @@
 
 This dashboard serves as the central hub for the Special Boat Service (SBS). It focuses on maritime special operations and amphibious warfare.
 
--
+---
 
 ## QUICK LINKS
 
@@ -11,7 +11,7 @@ This dashboard serves as the central hub for the Special Boat Service (SBS). It 
 - [[Reference/Technical-Standards|**Technical Standards (Maritime)**]]
 - [[Templates/Templates-Dashboard|**Operational Templates**]]
 
--
+---
 
 ## TRAINING PIPELINE
 
@@ -34,7 +34,7 @@ Troopers specialize based on operational requirements:
 - **Advanced Demolitions:** Underwater sabotage and maritime obstacle clearance.
 - **Communications:** Maritime-specific communications and satellite data links.
 
--
+---
 
 ## ACTIVE TRAINING RECORDS
 
@@ -44,11 +44,11 @@ FROM "Units/SBS/Training/Assessments/Results"
 WHERE file.name != "Assessments-Dashboard"
 ```
 
--
+---
 
 ## REFERENCE & DOCTRINE
 - [[../../Documentation/UK-Military-Ranks|UK Military Ranks]]
 - [UKSF Progression](../../Training/UKSF-Progression.pdf)
 
--
+---
 **"By Strength and Guile"**

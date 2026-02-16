@@ -9,7 +9,7 @@ last-maintenance: ""
 next-maintenance: ""
 notes: ""
 tags: [equipment]
--
+---
 
 # <% tp.frontmatter.name %>
 
@@ -27,4 +27,4 @@ tags: [equipment]
 ## Notes
 <% tp.frontmatter.notes %>
 
--
+---

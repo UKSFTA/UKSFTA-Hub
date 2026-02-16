@@ -2,7 +2,7 @@
 
 This dashboard provides the command-level overview of all active, planned, and historic operations for the Task Force.
 
--
+---
 
 ```dataviewjs
 // Dynamic Mission Status Board
@@ -47,7 +47,7 @@ dv.table(
 );
 ```
 
--
+---
 
 ## ACTIVE OPERATIONS
 *Ongoing operational deployments.*
@@ -58,7 +58,7 @@ FROM "Operations"
 WHERE status = "Executing" OR status = "In Progress"
 ```
 
--
+---
 
 ## MISSION PLANNING (CONOPs)
 *All Concept of Operations documents, sorted by approval status.*
@@ -79,7 +79,7 @@ WHERE type = "CONOP" AND status = "Draft"
 SORT op-num ASC
 ```
 
--
+---
 
 ## AFTER ACTION REPORTS (AARs)
 *Standardized post-operational analysis.*
@@ -92,7 +92,7 @@ SORT file.mtime DESC
 LIMIT 10
 ```
 
--
+---
 > [!NOTE] Documentation
 > For detailed instructions on the operational cycle, refer to the [[Documentation/Operations-Dashboard-Guide|Operations-Dashboard-Guide]].
 

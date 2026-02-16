@@ -2,7 +2,7 @@
 
 This dashboard serves as the central hub for the Special Air Service (SAS). It tracks candidate progression from Selection through to Troop attachment.
 
--
+---
 
 ## QUICK LINKS
 
@@ -11,7 +11,7 @@ This dashboard serves as the central hub for the Special Air Service (SAS). It t
 - [[Reference/Technical-Standards|**Technical Standards (SOPs)**]]
 - [[Templates/Templates-Dashboard|**Operational Templates**]]
 
--
+---
 
 ## TRAINING PIPELINE
 
@@ -35,7 +35,7 @@ Troopers are assigned to specific troops based on operational aptitude:
 - **Mountain Troop:** High-angle climbing and cold-weather operations.
 - **Mobility Troop:** Vehicle-mounted tactics and heavy weapons employment.
 
--
+---
 
 ## ACTIVE TRAINING RECORDS
 
@@ -45,11 +45,11 @@ FROM "Units/SAS/Training/Assessments/Results"
 WHERE file.name != "Assessments-Dashboard"
 ```
 
--
+---
 
 ## REFERENCE & DOCTRINE
 - [[../../Documentation/UK-Military-Ranks|UK Military Ranks]]
 - [UKSF Progression](../../Training/UKSF-Progression.pdf)
 
--
+---
 **"Who Dares Wins"**

@@ -41,11 +41,22 @@ async function checkLinks() {
   })
 
   let brokenCount = 0
+  let looseTacCount = 0
   // Ignore Templates folder for link checks
   const mdFiles = files.filter(f => f.endsWith('.md') && !f.includes('/Templates/'))
 
   for (const file of mdFiles) {
     const content = fs.readFileSync(file, 'utf-8')
+    
+    // Check for loose tacs (single hyphen on a line by itself)
+    const lines = content.split('\n')
+    lines.forEach((line, index) => {
+        if (line.trim() === '-') {
+            console.error(`⚠️ LOOSE TAC: Single hyphen used as separator in ${path.relative(process.cwd(), file)} on line ${index + 1}`)
+            looseTacCount++
+        }
+    })
+
     const wikilinkRegex = /\[\[(.*?)\]\]/g
     const markdownLinkRegex = /\[.*?\]\((?!(?:http|#))(.*?)\)/g
     let match
@@ -88,11 +99,11 @@ async function checkLinks() {
     }
   }
 
-  if (brokenCount > 0) {
-    console.error(`\n🚨 Audit Failed: ${brokenCount} broken links found.`)
+  if (brokenCount > 0 || looseTacCount > 0) {
+    console.error(`\n🚨 Audit Failed: ${brokenCount} broken links, ${looseTacCount} loose tacs found.`)
     process.exit(1)
   } else {
-    console.log("✅ All links verified. Audit passed.")
+    console.log("✅ All links and formatting verified. Audit passed.")
   }
 }
 

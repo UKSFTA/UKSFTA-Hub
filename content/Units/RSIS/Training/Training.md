@@ -2,7 +2,7 @@
 
 This dashboard serves as the central hub for the Royal Secret Intelligence Service (RSIS) - Tactical Intelligence & Exploitation (TIE) cell.
 
--
+---
 
 ## QUICK LINKS
 
@@ -11,7 +11,7 @@ This dashboard serves as the central hub for the Royal Secret Intelligence Servi
 - [[Reference/Technical-Standards|**Technical Standards (SIGINT/SSE)**]]
 - [[Templates/Templates-Dashboard|**Operational Templates**]]
 
--
+---
 
 ## TRAINING PIPELINE
 
@@ -33,7 +33,7 @@ Operators specialize in one of the two primary TIE Cell functions:
 - **Technical Specialist (Active Targeting):** ISR overwatch, dynamic HVT tracking, and threat warning dissemination.
 - **Exploitation Operator (Forward Exploitation Team):** Embedded support, on-target forensics, and field interrogation.
 
--
+---
 
 ## ACTIVE TRAINING RECORDS
 
@@ -43,11 +43,11 @@ FROM "Units/RSIS/Training/Assessments/Results"
 WHERE file.name != "Assessments-Dashboard"
 ```
 
--
+---
 
 ## REFERENCE & DOCTRINE
 - [[RSIS-Brief|The TIE Mandate]]
 - [[RSIS-Orbat|Orbat & Structure]]
 
--
+---
 **"Knowledge is Lethality"**

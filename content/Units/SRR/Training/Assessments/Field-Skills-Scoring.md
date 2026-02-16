@@ -3,14 +3,14 @@ CLASSIFICATION: RESTRICTED / NATO CONFIDENTIAL
 EVALUATOR: --------------------------
 CANDIDATE NAME/ID: --------------------------
 
--
+---
 
 ### SCORING RUBRIC
 - [ ] FAIL: Incorrect procedure; high risk of mission compromise/casualties.
 - [ ] PASS: Basic doctrinal knowledge; mission success likely.
 - [ ] EXCEEDS: High technical proficiency; demonstrates advanced "Recce" mindset.
 
--
+---
 
 ### SESSION 1: INFILTRATION & INTELLIGENCE
 #### MODULE A: THE STALKING PHASE
@@ -29,7 +29,7 @@ CANDIDATE NAME/ID: --------------------------
 | OP Concealment (Lens Glint/Movement) | | |
 **Critical Fail:** Missing 2 or more primary PIRs or "Lens Glint" detection.
 
--
+---
 
 ### SESSION 2: OVERWATCH & EXFILTRATION
 #### MODULE C: PRECISION SPOTTER
@@ -48,7 +48,7 @@ CANDIDATE NAME/ID: --------------------------
 | ERV Link-up (3min Extraction Window) |             |                      |
 **Critical Fail:** Capture by tracker team or failure to adhere to the PACE plan navigation route.
 
--
+---
 
 ### EVALUATOR’S SUMMARY
 
@@ -64,7 +64,7 @@ CANDIDATE NAME/ID: --------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
--
+---
 
 Signed,
 --------------------------

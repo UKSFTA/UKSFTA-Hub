@@ -4,7 +4,7 @@
 **REPORT TYPE:** CTR / Surveillance / Technical
 **CLASSIFICATION:** RESTRICTED / NATO CONFIDENTIAL
 
--
+---
 
 ### **1. MISSION DATA**
 
@@ -14,7 +14,7 @@
 *   **PRIMARY OBJECTIVE:** ------------------
 *   **REPORT ID:** ------------------ (e.g., OP-IRON-01)
 
--
+---
 
 ### **2. TARGET ENVIRONMENT**
 
@@ -26,7 +26,7 @@
 | **TRP 3 (QRF/Helipad)** | ------------------ |
 | **Secondary Target** | ------------------ |
 
--
+---
 
 ### **3. CHRONOLOGICAL CONTACT LOG (B-D-R-T)**
 
@@ -41,7 +41,7 @@
 | | | | | |
 | | | | | |
 
--
+---
 
 ### **4. PRIORITY INTELLIGENCE REQUIREMENTS (PIR) STATUS**
 
@@ -51,7 +51,7 @@
 *   **PIR 4 [TECHNICAL ASSETS]:** ---------------------------------------------------------
 *   **PIR 5 [ELECTRONIC SIG]:** ----------------------------------------------------------
 
--
+---
 
 ### **5. OBSERVER'S TACTICAL ASSESSMENT**
 
@@ -62,10 +62,10 @@
 *   **EQUIPMENT REMARKS:** (e.g., cTAB battery low; thermal interference due to fog)
     *   ------------------------------------------------------------------------------------
 
--
+---
 
 **SIGNED:** ------------------------ (Callsign)
 **TIMESTAMP (EXFIL):** ------------------------ (Z)
 
--
+---
 **"Everywhere, Unseen"**

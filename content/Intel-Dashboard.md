@@ -2,7 +2,7 @@
 
 This dashboard provides a centralized overview of all intelligence collected, processed, and exploited across all operational theatres.
 
--
+---
 
 ## LATEST INTELLIGENCE (LAST 7 DAYS)
 *Recently acquired intelligence reports.*
@@ -19,7 +19,7 @@ WHERE (contains(file.path, "Intel") OR contains(file.path, "DOCEX") OR contains(
 SORT file.cday DESC
 ```
 
--
+---
 
 ## INTELLIGENCE BY OPERATION
 *Intelligence grouping by theatre of operations.*
@@ -32,7 +32,7 @@ GROUP BY op-name
 SORT op-name ASC
 ```
 
--
+---
 
 ## PERSONS OF INTEREST (POI)
 *Individual profiles and network mapping data.*
@@ -47,7 +47,7 @@ FROM "Operations"
 WHERE contains(file.path, "Persons-of-Interest")
 ```
 
--
+---
 
 ## INTELLIGENCE BY DISCIPLINE
 
@@ -79,7 +79,7 @@ FROM "Operations"
 WHERE contains(file.path, "DOCEX") OR contains(file.path, "Documents")
 ```
 
--
+---
 
 ## UNCATEGORISED / PENDING TRIAGE
 *Raw intelligence awaiting discipline classification.*
@@ -98,5 +98,5 @@ WHERE contains(file.path, "Intel")
     AND file.name != "Intel Dashboard"
 ```
 
--
+---
 **"Knowledge is Lethality"**

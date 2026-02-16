@@ -7,7 +7,7 @@ phase: "None"
 current-unit: "None"
 date-joined: {{date}}
 tags: [personnel, candidate]
--
+---
 
 # {{full-name}}
 
@@ -18,7 +18,7 @@ tags: [personnel, candidate]
 - **Current Unit:** {{current-unit}}
 - **Date Joined:** {{date-joined}}
 
--
+---
 
 ## Training Progression
 - **Current Phase:** {{status}}
@@ -31,7 +31,7 @@ tags: [personnel, candidate]
 - [ ] Anti Tank Weapons
 - [ ] Crew Served Weapons
 
--
+---
 
 ## Memos & Assessments
 - *Add links to AARs, reviews, and instructor notes here.*

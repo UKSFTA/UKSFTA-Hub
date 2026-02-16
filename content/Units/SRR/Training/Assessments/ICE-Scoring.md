@@ -3,14 +3,14 @@ CLASSIFICATION: RESTRICTED / NATO CONFIDENTIAL
 EVALUATOR: SSgt. M. Barker [MC]
 CANDIDATE NAME/ID: --------------------------
 
--
+---
 
 ### SCORING RUBRIC
 - [ ] FAIL: Incorrect procedure; high risk of mission compromise/casualties.
 - [ ] PASS: Basic doctrinal knowledge; mission success likely.
 - [ ] EXCEEDS: High technical proficiency; demonstrates advanced "Recce" mindset.
 
--
+---
 
 ### SECTION 1: CLOSE TARGET RECONNAISSANCE (CTR)
 | Criteria                              | Score (0-2) | Observations / Notes |
@@ -20,7 +20,7 @@ CANDIDATE NAME/ID: --------------------------
 | Compromise Response (Fade vs. Engage) |             |                      |
 **Section Subtotal:** ---- / 6
 
--
+---
 
 ### SECTION 2: COUNTER-SNIPER & OBSERVATION
 | Criteria | Score (0-2) | Observations / Notes |
@@ -30,7 +30,7 @@ CANDIDATE NAME/ID: --------------------------
 | Follow-up Correction/Lead Calls | | |
 **Section Subtotal:** ---- / 6
 
--
+---
 
 ### SECTION 3: COMMS FAILURE & ISOLATION
 | Criteria | Score (0-2) | Observations / Notes |
@@ -40,7 +40,7 @@ CANDIDATE NAME/ID: --------------------------
 | Direct Signal Discipline (Tunnelling) | | |
 **Section Subtotal:** ---- / 6
 
--
+---
 
 ### SECTION 4: TECHNICAL PROFICIENCY
 | Criteria | Score (0-2) | Observations / Notes |
@@ -49,7 +49,7 @@ CANDIDATE NAME/ID: --------------------------
 | SIGINT/Electronic Signature MGMT | | |
 **Section Subtotal:** ---- / 4
 
--
+---
 
 ### EVALUATOR’S SUMMARY
 
@@ -65,7 +65,7 @@ CANDIDATE NAME/ID: --------------------------
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
--
+---
 
 Signed,
 SSgt. M. Barker [MC]
