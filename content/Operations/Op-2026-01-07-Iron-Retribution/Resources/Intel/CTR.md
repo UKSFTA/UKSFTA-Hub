@@ -1,6 +1,6 @@
 SRR Infil town
 
-![[Resources/Pasted-image-20260128184209.png]]
+![[Resources/Intel-CTR-Map-01.png]]
 
 Phone tracker
 500-1000
