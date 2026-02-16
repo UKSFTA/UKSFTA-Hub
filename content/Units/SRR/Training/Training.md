@@ -17,7 +17,7 @@ This dashboard serves as the central hub for all Special Reconnaissance Regiment
 
 ### PHASE 1: SELECTION & INITIAL EVALUATION (ICE)
 The **Initial Candidate Evaluation (ICE)** is designed to verify a candidate's theoretical knowledge of Special Reconnaissance doctrine and their aptitude for covert operations.
-- [ ] [ICE Theory Assessment](Assessments/Initial-Candidate-Evaluation-(ICE).md)
+- [ ] [[Assessments/Initial-Candidate-Evaluation-(ICE)|ICE Theory Assessment]]
 - [ ] [[Assessments/Field-Skills-Assessment|Covert Infiltration Assessment]]
 - [ ] Technical Standards Validation (ACE/ACRE/cTAB)
 
@@ -49,9 +49,9 @@ WHERE file.name != "Assessments-Dashboard"
 -
 
 ## REFERENCE & DOCTRINE
-- [PIR Standards](Reference/Priority%20Intelligence%20Requirements%20(PIR).md)
+- [[Reference/Priority-Intelligence-Requirements-(PIR)|PIR Standards]]
 - [[Documentation/UK-Military-Ranks|UK Military Ranks]]
-- [UKSF Progression](Training/UKSF%20Progression.pdf)
+- [UKSF Progression](Training/UKSF-Progression.pdf)
 
 -
 **"Everywhere, Unseen"**

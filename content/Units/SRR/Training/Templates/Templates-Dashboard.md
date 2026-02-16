@@ -5,8 +5,8 @@ Standardized reporting forms and documentation for SRR personnel.
 -
 
 ## INTELLIGENCE REPORTS
-- [[Field%20Intelligence%20Report|Field Intelligence Report (Standard)]] - General reccenaissance and CTR.
-- [[Field%20Intelligence%20Report%20Opfor|Field Intelligence Report (OPFOR)]] - Tracking of hostile movement and pattern-of-life.
+- [[Field-Intelligence-Report|Field Intelligence Report (Standard)]] - General reccenaissance and CTR.
+- [[Field-Intelligence-Report-Opfor|Field Intelligence Report (OPFOR)]] - Tracking of hostile movement and pattern-of-life.
 
 -
 

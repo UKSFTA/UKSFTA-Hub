@@ -11,6 +11,7 @@ This folder contains the formalized theoretical and practical assessments for SB
 
 ## PRACTICAL ASSESSMENTS
 - [[Maritime-Skills|Maritime Skills Assessment]] - Diving and Amphibious Infiltration proficiency.
+- [[Maritime-Skills-Scoring|Maritime Skills Scoring]] - Practical scoring rubric for Maritime Skills.
 
 -
 

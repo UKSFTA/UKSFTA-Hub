@@ -46,8 +46,8 @@ WHERE file.name != "Assessments-Dashboard"
 -
 
 ## REFERENCE & DOCTRINE
-- [[../../RSIS%20Brief|The TIE Mandate]]
-- [[../../Resources/Orbat/RSIS/RSIS%20Orbat|Orbat & Structure]]
+- [[RSIS-Brief|The TIE Mandate]]
+- [[RSIS-Orbat|Orbat & Structure]]
 
 -
 **"Knowledge is Lethality"**

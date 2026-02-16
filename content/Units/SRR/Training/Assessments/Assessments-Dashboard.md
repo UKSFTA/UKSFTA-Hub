@@ -5,14 +5,15 @@ This folder contains the formalized theoretical and practical assessments for SR
 -
 
 ## THEORETICAL ASSESSMENTS
-- [Initial Candidate Evaluation (ICE)](Initial%20Candidate%20Evaluation%20(ICE).md) - Phase 1 entry test.
-- [ICE Answer Key](Initial%20Candidate%20Evaluation%20(ICE)%20Answers.md) - **INSTRUCTORS ONLY.**
+- [[Initial-Candidate-Evaluation-(ICE)|Initial Candidate Evaluation (ICE)]] - Phase 1 entry test.
+- [[Initial-Candidate-Evaluation-(ICE)-Answers|ICE Answer Key]] - **INSTRUCTORS ONLY.**
 
 -
 
 ## PRACTICAL ASSESSMENTS
-- [[Field%20Skills%20Assessment|Field Skills Assessment]] - Navigation, Camouflage, and Observation.
-- [[ICE-Scoring|ICE Scoring]] - Practical scoring metrics.
+- [[Field-Skills-Assessment|Field Skills Assessment]] - Navigation, Camouflage, and Observation.
+- [[Field-Skills-Scoring|Field Skills Scoring]] - Practical scoring for Field Skills Assessment.
+- [[ICE-Scoring|ICE-Scoring]] - Practical scoring metrics.
 
 -
 

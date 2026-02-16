@@ -5,7 +5,7 @@ Standardized reporting forms and documentation for SBS personnel.
 -
 
 ## MARITIME INTELLIGENCE
-- [[Field%20Intelligence%20Report|Coastal Reccenaissance Report]] - Beachhead, harbor, and coastal data.
+- [[Field-Intelligence-Report|Coastal Reccenaissance Report]] - Beachhead, harbor, and coastal data.
 - [[Templates/Intel-Brief-Template|Vessel Interdiction Brief]] - Profiling of maritime targets.
 
 -

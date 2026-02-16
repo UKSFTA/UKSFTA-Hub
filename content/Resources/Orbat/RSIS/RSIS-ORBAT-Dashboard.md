@@ -5,13 +5,13 @@ This dashboard provides the foundational doctrine, structure, and operational ro
 -
 
 ## FOUNDATION & DOCTRINE
-- [[RSIS%20Brief|RSIS Branch Brief]] - Core mission and operational pillars.
-- [[RSIS%20Overview|RSIS Operational Overview]] - Tactical deployment and TIE Cell function.
+- [[RSIS-Brief|RSIS Branch Brief]] - Core mission and operational pillars.
+- [[RSIS-Overview|RSIS Operational Overview]] - Tactical deployment and TIE Cell function.
 
 -
 
 ## UNIT STRUCTURE (ORBAT)
-- [[RSIS%20Orbat|RSIS Detailed ORBAT]] - Personnel and role assignments within the TIE Cell.
+- [[RSIS-Orbat|RSIS Detailed ORBAT]] - Personnel and role assignments within the TIE Cell.
 
 -
 

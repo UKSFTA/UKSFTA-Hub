@@ -49,7 +49,7 @@ WHERE file.name != "Assessments-Dashboard"
 
 ## REFERENCE & DOCTRINE
 - [[../../Documentation/UK-Military-Ranks|UK Military Ranks]]
-- [UKSF Progression](../../Training/UKSF%20Progression.pdf)
+- [UKSF Progression](../../Training/UKSF-Progression.pdf)
 
 -
 **"Who Dares Wins"**

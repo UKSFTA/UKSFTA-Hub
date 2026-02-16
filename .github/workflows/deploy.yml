@@ -26,9 +26,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install Dependencies
-        run: npm install
-      - name: Build Quartz
+            - name: Install Dependencies
+              run: npm install
+            
+            - name: Validate Links
+              run: node scripts/check-links.mjs
+      
+            - name: Build Quartz
         env:
           UNIT_COMMANDER_BOT_TOKEN: ${{ secrets.UNIT_COMMANDER_BOT_TOKEN }}
           UNIT_COMMANDER_COMMUNITY_ID: ${{ secrets.UNIT_COMMANDER_COMMUNITY_ID }}

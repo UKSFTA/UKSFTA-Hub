@@ -5,7 +5,7 @@ Standardized reporting forms and documentation for SAS personnel.
 -
 
 ## INTELLIGENCE & RECONNAISSANCE
-- [[Field%20Intelligence%20Report|Field Intelligence Report]] - Standard patrol and reccenaissance reporting.
+- [[Field-Intelligence-Report|Field Intelligence Report]] - Standard patrol and reccenaissance reporting.
 - [[Templates/Intel-Brief-Template|Target Briefing]] - Detailed profile of operational objectives.
 
 -

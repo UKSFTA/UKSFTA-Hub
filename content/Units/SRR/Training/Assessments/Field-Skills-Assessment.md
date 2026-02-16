@@ -1,9 +1,3 @@
-To compress a 24-hour assessment into a **Modular 4-Hour Evaluation** (split into two 2-hour sessions), we need to focus on "High-Intensity Windows." Instead of long transits, we drop the candidate directly into the "work" phase.
-
-Here is the revised directive.
-
--
-
 ### **SESSION 1: INFILTRATION & INTELLIGENCE (2 HOURS)**
 
 **MODULE A: THE STALKING PHASE (60 MINS)**
@@ -26,9 +20,7 @@ Here is the revised directive.
 - **Evaluation:** Accuracy of the Written Intelligence Report. Reports must include B-D-R-T (Bearing-Distance-Reference-Target) data for all hostiles.
     
 - **Critical Fail:** Missing 2 or more primary PIRs or "Lens Glint" detection.
-    
 
--
 
 ### **SESSION 2: OVERWATCH & EXFILTRATION (2 HOURS)**
 
@@ -52,9 +44,7 @@ Here is the revised directive.
 - **Evaluation:** Speed vs. Stealth balance and successful link-up at the ERV within the 3-minute extraction window.
     
 - **Critical Fail:** Capture by tracker team or failure to adhere to the PACE plan navigation route.
-    
 
--
 
 ### **SAFETY & CONDUCT**
 
@@ -65,16 +55,17 @@ Here is the revised directive.
 3. **EQUIPMENT:** Full specialist loadout is required for both sessions. No "slick" runs.
     
 
--
-
 **Signed,** 
 **SSgt. M. Barker [MC]** 
 (Section Leader)
 
 Special Reconnaissance Regiment
 
--
+---
 
 ### **Section Leader's Coaching Note:**
 
 By cutting the "dead time" (the long periods of waiting in an OP), you are forcing the candidate to perform the most difficult parts of the job back-to-back. If they can maintain their composure through Module B and go straight into the high-stress spotting of Module C, they have the mental stamina we need.
+
+---
+**See also:** [[Field-Skills-Scoring|Field Skills Scoring Sheet]]

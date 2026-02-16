@@ -11,6 +11,7 @@ This folder contains the formalized theoretical and practical assessments for SA
 
 ## PRACTICAL ASSESSMENTS
 - [[Patrol-Skills|Patrol Skills Assessment]] - Navigation and Tactical Contact Drills.
+- [[Patrol-Skills-Scoring|Patrol Skills Scoring]] - Practical scoring rubric for Patrol Skills.
 
 -
 

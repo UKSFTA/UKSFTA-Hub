@@ -5,7 +5,7 @@ Standardized reporting forms and documentation for RSIS TIE Cell personnel.
 -
 
 ## INTELLIGENCE & EXPLOITATION
-- [[Field%20Intelligence%20Report|Field Intelligence Report (INTREP)]] - Standardized technical intelligence reporting.
+- [[Field-Intelligence-Report|Field Intelligence Report (INTREP)]] - Standardized technical intelligence reporting.
 - [[Templates/Intel-Brief-Template|Target Pack (HVT)]] - Comprehensive profiling of enemy personnel.
 
 -
